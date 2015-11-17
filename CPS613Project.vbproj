@@ -95,10 +95,10 @@
     <Compile Include="Game1.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main2.Designer.vb">
-      <DependentUpon>Main2.vb</DependentUpon>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Main2.vb">
+    <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -178,8 +178,8 @@
     <EmbeddedResource Include="Game5.resx">
       <DependentUpon>Game5.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main2.resx">
-      <DependentUpon>Main2.vb</DependentUpon>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

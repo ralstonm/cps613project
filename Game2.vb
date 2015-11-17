@@ -1,6 +1,6 @@
 ﻿Public Class Game2
 
-    Public parentFormRef As Main2
+    Public parentFormRef As Main
     Dim backButton As SharedBackButton
 
     Private Sub Game2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -19,7 +19,7 @@
         parentFormRef.closeGame2()
     End Sub
 
-    Public Sub New(ByRef parentForm As Main2)
+    Public Sub New(ByRef parentForm As Main)
         'Custom constructor to keep a reference to the Main Form
         'Can call puiblic methods and reference public variables
         InitializeComponent()

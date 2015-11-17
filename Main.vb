@@ -1,4 +1,4 @@
-﻿Public Class Main2
+﻿Public Class Main
 
     Dim temp As Uri
 
@@ -292,6 +292,6 @@
     End Sub
 
 
-    
-    
+
+
 End Class
