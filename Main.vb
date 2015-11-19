@@ -276,7 +276,7 @@
 
 
     Private Sub Main2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.FormBorderStyle = FormBorderStyle.FixedSingle
+        'Me.FormBorderStyle = FormBorderStyle.FixedSingle
 
         difficulty1 = 1
         difficulty2 = 1
