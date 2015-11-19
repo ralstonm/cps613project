@@ -389,6 +389,72 @@
   <ItemGroup>
     <None Include="Resources\speech.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magneth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magneta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayF.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayG.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayH.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayA.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayB.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayC.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayD.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayE.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayD.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayE.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayH.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayA.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayB.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sayC.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

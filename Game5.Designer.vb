@@ -22,29 +22,33 @@ Partial Class Game5
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'AlphaBetParrotButton
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(56, 58)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Game 5:  Missing Letters"
+        Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
+        Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(4, 5)
+        Me.AlphaBetParrotButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(123, 166)
+        Me.AlphaBetParrotButton.TabIndex = 4
+        Me.AlphaBetParrotButton.Text = " "
+        Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
         'Game5
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Label1)
+        Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.AlphaBetParrotButton)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Game5"
-        Me.Size = New System.Drawing.Size(422, 622)
+        Me.Size = New System.Drawing.Size(633, 957)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents AlphaBetParrotButton As System.Windows.Forms.Button
 
 End Class

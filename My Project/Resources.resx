@@ -268,4 +268,28 @@
   <data name="speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="magneta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magneta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnete.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magneth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magneth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

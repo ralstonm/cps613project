@@ -12,15 +12,11 @@
 
     End Sub
 
-
-
-
     Private Sub bButton_Click(sender As Object, e As EventArgs) Handles bButton.Click
 
         Me.bButton.Visible = False
         Me.cButton.Visible = False
         Me.fButton.Visible = False
-
 
         Me.aButton.Visible = True
         Me.eButton.Visible = True
@@ -35,7 +31,6 @@
         Me.eButton.Visible = False
         Me.oButton.Visible = False
 
-
         Me.pButton.Visible = True
         Me.jButton.Visible = True
         Me.xButton.Visible = True
@@ -44,7 +39,6 @@
     End Sub
 
     Private Sub jButton_Click(sender As Object, e As EventArgs) Handles jButton.Click
-
         My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
         parentFormRef.closeGame1()
 
@@ -59,12 +53,9 @@
             My.Computer.Audio.Play(My.Resources.j, AudioPlayMode.Background)
         End If
     End Sub
-
     Private Sub alphabetGamePanel_Paint(sender As Object, e As PaintEventArgs) Handles alphabetGamePanel.Paint
 
     End Sub
-
-
 
     Private Sub Game1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -98,6 +89,5 @@
         'Calls Parent Form to Close Settings and delete Object
         parentFormRef.closeGame1()
     End Sub
-
 
 End Class
