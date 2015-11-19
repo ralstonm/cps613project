@@ -23,140 +23,43 @@ Partial Class Game1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.alphabetGamePanel = New System.Windows.Forms.Panel()
-        Me.jButton = New System.Windows.Forms.Button()
-        Me.xButton = New System.Windows.Forms.Button()
-        Me.pButton = New System.Windows.Forms.Button()
-        Me.oButton = New System.Windows.Forms.Button()
-        Me.aButton = New System.Windows.Forms.Button()
-        Me.eButton = New System.Windows.Forms.Button()
-        Me.fButton = New System.Windows.Forms.Button()
-        Me.cButton = New System.Windows.Forms.Button()
-        Me.bButton = New System.Windows.Forms.Button()
+        Me.buttonPlaces = New System.Windows.Forms.Panel()
+        Me.pictureBook = New System.Windows.Forms.PictureBox()
         Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
+        Me.storyBookImage = New System.Windows.Forms.PictureBox()
         Me.alphabetGamePanel.SuspendLayout()
+        CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.storyBookImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'alphabetGamePanel
         '
-        Me.alphabetGamePanel.Controls.Add(Me.jButton)
-        Me.alphabetGamePanel.Controls.Add(Me.xButton)
-        Me.alphabetGamePanel.Controls.Add(Me.pButton)
-        Me.alphabetGamePanel.Controls.Add(Me.oButton)
-        Me.alphabetGamePanel.Controls.Add(Me.aButton)
-        Me.alphabetGamePanel.Controls.Add(Me.eButton)
-        Me.alphabetGamePanel.Controls.Add(Me.fButton)
-        Me.alphabetGamePanel.Controls.Add(Me.cButton)
-        Me.alphabetGamePanel.Controls.Add(Me.bButton)
+        Me.alphabetGamePanel.Controls.Add(Me.storyBookImage)
+        Me.alphabetGamePanel.Controls.Add(Me.buttonPlaces)
+        Me.alphabetGamePanel.Controls.Add(Me.pictureBook)
         Me.alphabetGamePanel.Controls.Add(Me.AlphaBetParrotButton)
         Me.alphabetGamePanel.Location = New System.Drawing.Point(0, 1)
         Me.alphabetGamePanel.Name = "alphabetGamePanel"
         Me.alphabetGamePanel.Size = New System.Drawing.Size(422, 622)
         Me.alphabetGamePanel.TabIndex = 10
         '
-        'jButton
+        'buttonPlaces
         '
-        Me.jButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.j1
-        Me.jButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.jButton.Location = New System.Drawing.Point(279, 400)
-        Me.jButton.Name = "jButton"
-        Me.jButton.Size = New System.Drawing.Size(77, 90)
-        Me.jButton.TabIndex = 13
-        Me.jButton.Text = " "
-        Me.jButton.UseVisualStyleBackColor = True
-        Me.jButton.Visible = False
+        Me.buttonPlaces.BackColor = System.Drawing.Color.Transparent
+        Me.buttonPlaces.Location = New System.Drawing.Point(0, 319)
+        Me.buttonPlaces.Name = "buttonPlaces"
+        Me.buttonPlaces.Size = New System.Drawing.Size(419, 299)
+        Me.buttonPlaces.TabIndex = 5
         '
-        'xButton
+        'pictureBook
         '
-        Me.xButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.x
-        Me.xButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.xButton.Location = New System.Drawing.Point(322, 287)
-        Me.xButton.Name = "xButton"
-        Me.xButton.Size = New System.Drawing.Size(77, 90)
-        Me.xButton.TabIndex = 12
-        Me.xButton.Text = " "
-        Me.xButton.UseVisualStyleBackColor = True
-        Me.xButton.Visible = False
-        '
-        'pButton
-        '
-        Me.pButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.p
-        Me.pButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pButton.Location = New System.Drawing.Point(279, 172)
-        Me.pButton.Name = "pButton"
-        Me.pButton.Size = New System.Drawing.Size(77, 90)
-        Me.pButton.TabIndex = 11
-        Me.pButton.Text = " "
-        Me.pButton.UseVisualStyleBackColor = True
-        Me.pButton.Visible = False
-        '
-        'oButton
-        '
-        Me.oButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.o
-        Me.oButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.oButton.Location = New System.Drawing.Point(150, 410)
-        Me.oButton.Name = "oButton"
-        Me.oButton.Size = New System.Drawing.Size(77, 90)
-        Me.oButton.TabIndex = 10
-        Me.oButton.Text = " "
-        Me.oButton.UseVisualStyleBackColor = True
-        Me.oButton.Visible = False
-        '
-        'aButton
-        '
-        Me.aButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.a1
-        Me.aButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.aButton.Location = New System.Drawing.Point(194, 297)
-        Me.aButton.Name = "aButton"
-        Me.aButton.Size = New System.Drawing.Size(77, 90)
-        Me.aButton.TabIndex = 9
-        Me.aButton.Text = " "
-        Me.aButton.UseVisualStyleBackColor = True
-        Me.aButton.Visible = False
-        '
-        'eButton
-        '
-        Me.eButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.e
-        Me.eButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.eButton.Location = New System.Drawing.Point(140, 182)
-        Me.eButton.Name = "eButton"
-        Me.eButton.Size = New System.Drawing.Size(77, 90)
-        Me.eButton.TabIndex = 8
-        Me.eButton.Text = " "
-        Me.eButton.UseVisualStyleBackColor = True
-        Me.eButton.Visible = False
-        '
-        'fButton
-        '
-        Me.fButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.f
-        Me.fButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.fButton.Location = New System.Drawing.Point(10, 410)
-        Me.fButton.Name = "fButton"
-        Me.fButton.Size = New System.Drawing.Size(77, 90)
-        Me.fButton.TabIndex = 7
-        Me.fButton.Text = " "
-        Me.fButton.UseVisualStyleBackColor = True
-        '
-        'cButton
-        '
-        Me.cButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.c
-        Me.cButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cButton.Location = New System.Drawing.Point(54, 297)
-        Me.cButton.Name = "cButton"
-        Me.cButton.Size = New System.Drawing.Size(77, 90)
-        Me.cButton.TabIndex = 6
-        Me.cButton.Text = " "
-        Me.cButton.UseVisualStyleBackColor = True
-        '
-        'bButton
-        '
-        Me.bButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.b1
-        Me.bButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.bButton.Location = New System.Drawing.Point(10, 182)
-        Me.bButton.Name = "bButton"
-        Me.bButton.Size = New System.Drawing.Size(77, 90)
-        Me.bButton.TabIndex = 5
-        Me.bButton.Text = " "
-        Me.bButton.UseVisualStyleBackColor = True
+        Me.pictureBook.BackgroundImage = Global.Lab5Template.My.Resources.Resources.picturebook
+        Me.pictureBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pictureBook.Location = New System.Drawing.Point(89, 31)
+        Me.pictureBook.Name = "pictureBook"
+        Me.pictureBook.Size = New System.Drawing.Size(230, 240)
+        Me.pictureBook.TabIndex = 4
+        Me.pictureBook.TabStop = False
         '
         'AlphaBetParrotButton
         '
@@ -164,10 +67,19 @@ Partial Class Game1
         Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 3)
         Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
-        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(82, 108)
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(80, 78)
         Me.AlphaBetParrotButton.TabIndex = 3
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
+        '
+        'storyBookImage
+        '
+        Me.storyBookImage.BackColor = System.Drawing.Color.Transparent
+        Me.storyBookImage.Location = New System.Drawing.Point(115, 52)
+        Me.storyBookImage.Name = "storyBookImage"
+        Me.storyBookImage.Size = New System.Drawing.Size(172, 201)
+        Me.storyBookImage.TabIndex = 6
+        Me.storyBookImage.TabStop = False
         '
         'Game1
         '
@@ -177,19 +89,15 @@ Partial Class Game1
         Me.Name = "Game1"
         Me.Size = New System.Drawing.Size(422, 622)
         Me.alphabetGamePanel.ResumeLayout(False)
+        CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.storyBookImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents alphabetGamePanel As System.Windows.Forms.Panel
-    Friend WithEvents jButton As System.Windows.Forms.Button
-    Friend WithEvents xButton As System.Windows.Forms.Button
-    Friend WithEvents pButton As System.Windows.Forms.Button
-    Friend WithEvents oButton As System.Windows.Forms.Button
-    Friend WithEvents aButton As System.Windows.Forms.Button
-    Friend WithEvents eButton As System.Windows.Forms.Button
-    Friend WithEvents fButton As System.Windows.Forms.Button
-    Friend WithEvents cButton As System.Windows.Forms.Button
-    Friend WithEvents bButton As System.Windows.Forms.Button
     Friend WithEvents AlphaBetParrotButton As System.Windows.Forms.Button
+    Friend WithEvents pictureBook As System.Windows.Forms.PictureBox
+    Friend WithEvents buttonPlaces As System.Windows.Forms.Panel
+    Friend WithEvents storyBookImage As System.Windows.Forms.PictureBox
 
 End Class
