@@ -37,7 +37,7 @@
 
     Private Sub MicrophoneButton_Click(sender As Object, e As EventArgs) Handles MicrophoneButton.Click
         Me.MicrophoneButton.BackColor = Color.Red
-        System.Threading.Thread.Sleep(500)
+        System.Threading.Thread.Sleep(1000)
         SAPI.Speak("Good job!")
         Me.MicrophoneButton.BackColor = Color.White
         counter = counter + 1
