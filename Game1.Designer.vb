@@ -23,13 +23,13 @@ Partial Class Game1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.alphabetGamePanel = New System.Windows.Forms.Panel()
+        Me.storyBookImage = New System.Windows.Forms.PictureBox()
         Me.buttonPlaces = New System.Windows.Forms.Panel()
         Me.pictureBook = New System.Windows.Forms.PictureBox()
         Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
-        Me.storyBookImage = New System.Windows.Forms.PictureBox()
         Me.alphabetGamePanel.SuspendLayout()
-        CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.storyBookImage, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'alphabetGamePanel
@@ -43,9 +43,19 @@ Partial Class Game1
         Me.alphabetGamePanel.Size = New System.Drawing.Size(422, 622)
         Me.alphabetGamePanel.TabIndex = 10
         '
+        'storyBookImage
+        '
+        Me.storyBookImage.BackColor = System.Drawing.Color.Transparent
+        Me.storyBookImage.Location = New System.Drawing.Point(115, 52)
+        Me.storyBookImage.Name = "storyBookImage"
+        Me.storyBookImage.Size = New System.Drawing.Size(172, 201)
+        Me.storyBookImage.TabIndex = 6
+        Me.storyBookImage.TabStop = False
+        '
         'buttonPlaces
         '
         Me.buttonPlaces.BackColor = System.Drawing.Color.Transparent
+        Me.buttonPlaces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.buttonPlaces.Location = New System.Drawing.Point(0, 319)
         Me.buttonPlaces.Name = "buttonPlaces"
         Me.buttonPlaces.Size = New System.Drawing.Size(419, 299)
@@ -72,15 +82,6 @@ Partial Class Game1
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
-        'storyBookImage
-        '
-        Me.storyBookImage.BackColor = System.Drawing.Color.Transparent
-        Me.storyBookImage.Location = New System.Drawing.Point(115, 52)
-        Me.storyBookImage.Name = "storyBookImage"
-        Me.storyBookImage.Size = New System.Drawing.Size(172, 201)
-        Me.storyBookImage.TabIndex = 6
-        Me.storyBookImage.TabStop = False
-        '
         'Game1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -89,8 +90,8 @@ Partial Class Game1
         Me.Name = "Game1"
         Me.Size = New System.Drawing.Size(422, 622)
         Me.alphabetGamePanel.ResumeLayout(False)
-        CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.storyBookImage, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
