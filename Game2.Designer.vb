@@ -22,13 +22,32 @@ Partial Class Game2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Game2))
-        Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
-        Me.KeyboardPic = New System.Windows.Forms.PictureBox()
         Me.LetterBox = New System.Windows.Forms.PictureBox()
-        CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.KeyboardPic = New System.Windows.Forms.PictureBox()
+        Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
         CType(Me.LetterBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'LetterBox
+        '
+        Me.LetterBox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.question
+        Me.LetterBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LetterBox.Location = New System.Drawing.Point(111, 6)
+        Me.LetterBox.Name = "LetterBox"
+        Me.LetterBox.Size = New System.Drawing.Size(196, 168)
+        Me.LetterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.LetterBox.TabIndex = 6
+        Me.LetterBox.TabStop = False
+        '
+        'KeyboardPic
+        '
+        Me.KeyboardPic.BackgroundImage = Global.Lab5Template.My.Resources.Resources.keyboard
+        Me.KeyboardPic.Location = New System.Drawing.Point(52, 180)
+        Me.KeyboardPic.Name = "KeyboardPic"
+        Me.KeyboardPic.Size = New System.Drawing.Size(329, 155)
+        Me.KeyboardPic.TabIndex = 5
+        Me.KeyboardPic.TabStop = False
         '
         'AlphaBetParrotButton
         '
@@ -41,25 +60,6 @@ Partial Class Game2
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
-        'KeyboardPic
-        '
-        Me.KeyboardPic.Image = CType(resources.GetObject("KeyboardPic.Image"), System.Drawing.Image)
-        Me.KeyboardPic.Location = New System.Drawing.Point(52, 180)
-        Me.KeyboardPic.Name = "KeyboardPic"
-        Me.KeyboardPic.Size = New System.Drawing.Size(329, 155)
-        Me.KeyboardPic.TabIndex = 5
-        Me.KeyboardPic.TabStop = False
-        '
-        'LetterBox
-        '
-        Me.LetterBox.Image = CType(resources.GetObject("LetterBox.Image"), System.Drawing.Image)
-        Me.LetterBox.Location = New System.Drawing.Point(111, 6)
-        Me.LetterBox.Name = "LetterBox"
-        Me.LetterBox.Size = New System.Drawing.Size(196, 168)
-        Me.LetterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.LetterBox.TabIndex = 6
-        Me.LetterBox.TabStop = False
-        '
         'Game2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -69,8 +69,8 @@ Partial Class Game2
         Me.Controls.Add(Me.AlphaBetParrotButton)
         Me.Name = "Game2"
         Me.Size = New System.Drawing.Size(422, 622)
-        CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LetterBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
