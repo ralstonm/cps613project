@@ -467,6 +467,156 @@
   <ItemGroup>
     <None Include="Resources\cat.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ablock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ublock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hippo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\igloo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unicorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\violin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walrus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xylophone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zebra.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

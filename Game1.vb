@@ -5,7 +5,7 @@
     Dim mySettings_Advanced As Settings_Advanced
     Dim parrotHelpText
     'How many letters do we actually have?
-    Dim letterRange = 3
+    Dim letterRange = 26
 
     'What game are we on?
     Dim currentGameState
@@ -14,11 +14,15 @@
     'Array of all games that will be played
     Dim gamesToPlay()
 
+    Dim point As New Point()
 
-    Dim letterList() As String = {"a", "b", "c"}
-    Dim letterPicture() As String = {"apple", "bee", "cat"}
-    Dim letterResourceList() As String = {"a1", "b1", "c"}
-    Dim letterResourceName() As String = {"apple", "bee", "cat"}
+    Private m_MouseIsDown As Boolean = False
+
+
+    Dim letterList() As String = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
+    Dim letterPicture() As String = {"apple", "boy", "cat", "dog", "egg", "fish", "girl", "hippo", "igloo", "jet", "kitten", "lion", "monkey", "nail", "orange", "pirate", "queen", "rocket", "snake", "tiger", "unicorn", "violin", "walrus", "xylophone", "yak", "zebra"}
+    Dim letterResourceList() As String = {"ablock", "bblock", "cblock", "dblock", "eblock", "fblock", "gblock", "hblock", "iblock", "jblock", "kblock", "lblock", "mblock", "nblock", "oblock", "pblock", "qblock", "rblock", "sblock", "tblock", "ublock", "vblock", "wblock", "xblock", "yblock", "zblock"}
+    Dim letterResourceName() As String = {"apple", "boy", "cat", "dog", "egg", "fish", "girl", "hippo", "igloo", "jet", "kitten", "lion", "monkey", "nail", "orange", "pirate", "queen", "rocket", "snake", "tiger", "unicorn", "violin", "walrus", "xylophone", "yak", "zebra"}
 
     'Reusable array for the letter tiles
     Dim picBoxArray()
@@ -116,7 +120,7 @@
         'Loop through the array of pics up until the second to last one and assign randomly.  The last one will be the correct answer
         For counter = 0 To (numOfPics - 2)
 
-            Dim randoLetter = 0
+            Dim randoLetter = gamesToPlay(currentGameState)
 
             'Pick a random letter.  If it's the same as the correct answer, pick another one
             Do While randoLetter = gamesToPlay(currentGameState)
@@ -130,7 +134,7 @@
 
             tempPic.BorderStyle = Windows.Forms.BorderStyle.Fixed3D
 
-            tempPic.Size = New Size(50, 75)
+            tempPic.Size = New Size(75, 75)
 
             'Assign an image to it based on the array of resource names
             tempPic.BackgroundImage = My.Resources.ResourceManager.GetObject(letterResourceList(randoLetter))
@@ -149,7 +153,7 @@
 
         tempPic2.BorderStyle = Windows.Forms.BorderStyle.Fixed3D
 
-        tempPic2.Size = New Size(50, 75)
+        tempPic2.Size = New Size(75, 75)
 
         tempPic2.BackgroundImage = My.Resources.ResourceManager.GetObject(letterResourceList(gamesToPlay(currentGameState)))
 
@@ -196,7 +200,7 @@
                 Debug.Print("ButtonPlaces Height" & buttonPlaces.Height)
 
                 'Assign a position randomly within the buttonplaces panel
-                Dim x = randomNumber((buttonPlaces.Width - 50))
+                Dim x = randomNumber((buttonPlaces.Width - 75))
                 Dim y = randomNumber((buttonPlaces.Height - 75))
 
                 'First one placed is always good
@@ -232,6 +236,7 @@
             End While
 
             picBoxArray(counter).bringToFront()
+            addDragDrop(picBoxArray(counter))
 
         Next
 
@@ -333,5 +338,70 @@
         speak("That's not the right letter!")
         sender.Visible = False
     End Sub
+
+    Private Sub addDragDrop(ByRef sender As PictureBox)
+
+        ' sender.AllowDrop = True
+        buttonPlaces.AllowDrop = True
+
+
+
+        AddHandler sender.MouseDown, AddressOf Me.DragDrop_MouseDown
+        AddHandler sender.MouseMove, AddressOf Me.DragDrop_MouseMove
+        AddHandler sender.MouseUp, AddressOf Me.DragDrop_MouseUp
+        '  AddHandler sender.DragEnter, AddressOf Me.DragDrop_DragEnter
+
+
+        ' sender.MouseDown()
+        'sender.MouseMove()
+        'ender.DragEnter()
+
+    End Sub
+
+    Private Sub DragDrop_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
+
+        'sender.CaptureMouse()
+
+        'control = CType(sender, Control)
+        '/control.CaptureMouse()
+        ' control.Capture = True
+        '  If (control.Capture) Then
+        'Debug.Print("Captured Mouse")
+        'End If
+
+        Dim control As Control = CType(sender, Control)
+
+        control.Capture = True
+
+        point = New Point(e.X, e.Y)
+        'sender.Loc()
+
+    End Sub
+
+    Private Sub DragDrop_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
+            ' Initiate dragging and allow either copy or move.
+            'sender.DoDragDrop(sender.BackGroundImage, DragDropEffects.Move)
+            'Debug.Print(MousePosition.X)
+        'Debug.Print(MousePosition.Y)
+
+        Dim control As Control = CType(sender, Control)
+
+        If control.Capture = True Then
+
+            sender.Location = point
+            point = New Point(e.X, e.Y)
+        End If
+
+
+    End Sub
+
+
+    Private Sub DragDrop_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
+        Dim control As Control = CType(sender, Control)
+
+        control.Capture = False
+
+    End Sub
+
 
 End Class
