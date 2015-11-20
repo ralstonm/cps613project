@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Game2
     Inherits System.Windows.Forms.UserControl
 
@@ -22,29 +22,60 @@ Partial Class Game2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Game2))
+        Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
+        Me.KeyboardPic = New System.Windows.Forms.PictureBox()
+        Me.LetterBox = New System.Windows.Forms.PictureBox()
+        CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LetterBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'AlphaBetParrotButton
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(127, 116)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(126, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Game 2: Keyboard Game"
+        Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
+        Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 12)
+        Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(80, 78)
+        Me.AlphaBetParrotButton.TabIndex = 4
+        Me.AlphaBetParrotButton.Text = " "
+        Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
+        '
+        'KeyboardPic
+        '
+        Me.KeyboardPic.Image = CType(resources.GetObject("KeyboardPic.Image"), System.Drawing.Image)
+        Me.KeyboardPic.Location = New System.Drawing.Point(52, 180)
+        Me.KeyboardPic.Name = "KeyboardPic"
+        Me.KeyboardPic.Size = New System.Drawing.Size(329, 155)
+        Me.KeyboardPic.TabIndex = 5
+        Me.KeyboardPic.TabStop = False
+        '
+        'LetterBox
+        '
+        Me.LetterBox.Image = CType(resources.GetObject("LetterBox.Image"), System.Drawing.Image)
+        Me.LetterBox.Location = New System.Drawing.Point(111, 6)
+        Me.LetterBox.Name = "LetterBox"
+        Me.LetterBox.Size = New System.Drawing.Size(196, 168)
+        Me.LetterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.LetterBox.TabIndex = 6
+        Me.LetterBox.TabStop = False
         '
         'Game2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LetterBox)
+        Me.Controls.Add(Me.KeyboardPic)
+        Me.Controls.Add(Me.AlphaBetParrotButton)
         Me.Name = "Game2"
         Me.Size = New System.Drawing.Size(422, 622)
+        CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LetterBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents AlphaBetParrotButton As System.Windows.Forms.Button
+    Friend WithEvents KeyboardPic As System.Windows.Forms.PictureBox
+    Friend WithEvents LetterBox As System.Windows.Forms.PictureBox
 
 End Class
