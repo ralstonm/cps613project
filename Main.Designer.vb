@@ -427,7 +427,7 @@ Partial Class Main
         '
         'genericPanel
         '
-        Me.genericPanel.Location = New System.Drawing.Point(75, 112)
+        Me.genericPanel.Location = New System.Drawing.Point(75, 121)
         Me.genericPanel.Name = "genericPanel"
         Me.genericPanel.Size = New System.Drawing.Size(422, 621)
         Me.genericPanel.TabIndex = 9
@@ -439,7 +439,7 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Lab5Template.My.Resources.Resources.ipadPro1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(597, 762)
+        Me.ClientSize = New System.Drawing.Size(597, 850)
         Me.Controls.Add(Me.genericPanel)
         Me.Controls.Add(Me.toyPanel)
         Me.Controls.Add(Me.Button17)
