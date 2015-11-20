@@ -137,9 +137,9 @@
             tempPic.Size = New Size(75, 75)
 
             'Assign an image to it based on the array of resource names
-            tempPic.BackgroundImage = My.Resources.ResourceManager.GetObject(letterResourceList(randoLetter))
+            tempPic.Image = My.Resources.ResourceManager.GetObject(letterResourceList(randoLetter))
 
-            tempPic.BackgroundImageLayout = ImageLayout.Stretch
+            tempPic.SizeMode = PictureBoxSizeMode.StretchImage
 
             'Assign the same clickhandler to all wrong answers
             AddHandler tempPic.Click, AddressOf Me.wrongButton_Click
@@ -155,9 +155,10 @@
 
         tempPic2.Size = New Size(75, 75)
 
-        tempPic2.BackgroundImage = My.Resources.ResourceManager.GetObject(letterResourceList(gamesToPlay(currentGameState)))
+        tempPic2.Image = My.Resources.ResourceManager.GetObject(letterResourceList(gamesToPlay(currentGameState)))
 
-        tempPic2.BackgroundImageLayout = ImageLayout.Stretch
+        tempPic2.SizeMode = PictureBoxSizeMode.StretchImage
+
 
         'Gets the clickhandler for the right answer
         AddHandler tempPic2.Click, AddressOf Me.rightButton_Click
@@ -388,8 +389,20 @@
 
         If control.Capture = True Then
 
-            sender.Location = point
-            point = New Point(e.X, e.Y)
+            Dim newPoint = New Point(e.X, e.Y)
+
+            Dim diffX = point.X - newPoint.X
+            Dim diffY = point.Y - newPoint.Y
+
+            Dim currentX = sender.Location.X
+            Dim currentY = sender.Location.Y
+
+            sender.Location = New Point(currentX - diffX, currentY - diffY)
+
+            sender.BringToFront()
+
+            point = newPoint
+
         End If
 
 
