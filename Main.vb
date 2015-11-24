@@ -259,7 +259,7 @@
     End Sub
 
     Private Sub parrotButton_Click(sender As Object, e As EventArgs) Handles parrotButton.Click
-        My.Computer.Audio.Play(My.Resources.speech, AudioPlayMode.Background)
+        speak("Hello! Tap on a toy to play!")
     End Sub
 
 
@@ -291,7 +291,12 @@
 
     End Sub
 
-
+    Private Sub speak(text As String)
+        Debug.Print(text)
+        Dim SAPI
+        SAPI = CreateObject("SAPI.spvoice")
+        SAPI.Speak(text)
+    End Sub
 
 
 End Class

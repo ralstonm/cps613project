@@ -164,6 +164,12 @@
     <Compile Include="Game5.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SharedResults.Designer.vb">
+      <DependentUpon>SharedResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SharedResults.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Game1.resx">
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game4.resx">
       <DependentUpon>Game4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SharedResults.resx">
+      <DependentUpon>SharedResults.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -622,6 +631,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cps613bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-colorful-background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@
     Public parentFormRef As Main
     Dim backButton As SharedBackButton
     Dim mySettings_Advanced As Settings_Advanced
+    Dim resultsScreen As SharedResults
     Dim parrotHelpText
     'How many letters do we actually have?
     Dim letterRange = 26
@@ -62,11 +63,11 @@
         Dim numOfGames As Integer
         'Set a different number of games for each difficulty
         If (parentFormRef.difficulty1 = 1) Then
-            numOfGames = 5
+            numOfGames = 6
         ElseIf (parentFormRef.difficulty2 = 1) Then
-            numOfGames = 7
+            numOfGames = 8
         Else
-            numOfGames = 10
+            numOfGames = 12
         End If
 
         Debug.Print("Generating games " & numOfGames)
@@ -104,13 +105,13 @@
         Dim numOfPics
 
         If (parentFormRef.difficulty1 = 1) Then
-            numOfPics = 5
-
-        ElseIf (parentFormRef.difficulty2 = 1) Then
             numOfPics = 7
 
-        Else
+        ElseIf (parentFormRef.difficulty2 = 1) Then
             numOfPics = 10
+
+        Else
+            numOfPics = 13
 
         End If
 
@@ -145,7 +146,7 @@
             AddHandler tempPic.Click, AddressOf Me.wrongButton_Click
 
             'Add to the array
-            picBoxArray(counter) = tempPic
+            picBoxArray(counter + 1) = tempPic
 
         Next
         'Now, we can set up the correct answer
@@ -160,10 +161,11 @@
         tempPic2.SizeMode = PictureBoxSizeMode.StretchImage
 
 
+
         'Gets the clickhandler for the right answer
         AddHandler tempPic2.Click, AddressOf Me.rightButton_Click
 
-        picBoxArray(numOfPics - 1) = tempPic2
+        picBoxArray(0) = tempPic2
 
         Debug.Print(picBoxArray(numOfPics - 1).Location.X)
 
@@ -286,9 +288,13 @@
 
     Private Sub endGame()
 
-        speak("Good Job!")
+        'Manually add the back button
+        resultsScreen = New SharedResults()
+        Me.Controls.Add(resultsScreen)
+        resultsScreen.BringToFront()
+        ' resultsScreen.Location = New Point(parentFormRef.xOffsetB, parentFormRef.yOffsetB)
+        AddHandler resultsScreen.Button1.Click, AddressOf Me.backButton_Click
 
-        parentFormRef.closeGame1()
 
     End Sub
 
@@ -305,7 +311,7 @@
 
         pictureBook.Visible = False
 
-        speak("Hi! Let's see if you can recognize letters!")
+        speak("Hi! Let's see if you can recognize letters! Tap the right letter! If you don't see it, drag other letters out of the way!")
 
         generateGames()
 
@@ -325,7 +331,7 @@
         speak("That's right!")
 
         If currentGameType = 0 Then
-            speak("That's the letter ," + letterList(gamesToPlay(currentGameState)))
+            speak("That's the letter, " + letterList(gamesToPlay(currentGameState)))
         Else
             speak(letterList(gamesToPlay(currentGameState)) + ", is for " + letterResourceName(gamesToPlay(currentGameState)))
         End If
@@ -417,4 +423,7 @@
     End Sub
 
 
+    Private Sub buttonPlaces_Paint(sender As Object, e As PaintEventArgs) Handles buttonPlaces.Paint
+
+    End Sub
 End Class

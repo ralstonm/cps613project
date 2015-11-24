@@ -34,6 +34,7 @@ Partial Class Game1
         '
         'alphabetGamePanel
         '
+        Me.alphabetGamePanel.BackgroundImage = Global.Lab5Template.My.Resources.Resources.cps613bg
         Me.alphabetGamePanel.Controls.Add(Me.storyBookImage)
         Me.alphabetGamePanel.Controls.Add(Me.buttonPlaces)
         Me.alphabetGamePanel.Controls.Add(Me.pictureBook)
@@ -55,7 +56,6 @@ Partial Class Game1
         'buttonPlaces
         '
         Me.buttonPlaces.BackColor = System.Drawing.Color.Transparent
-        Me.buttonPlaces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.buttonPlaces.Location = New System.Drawing.Point(0, 319)
         Me.buttonPlaces.Name = "buttonPlaces"
         Me.buttonPlaces.Size = New System.Drawing.Size(419, 299)

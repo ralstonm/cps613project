@@ -270,6 +270,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cps613bg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cps613bg", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property dblock() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dblock", resourceCulture)
@@ -383,6 +393,16 @@ Namespace My.Resources
         Friend ReadOnly Property googlemap() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("googlemap", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property happy_colorful_background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("happy-colorful-background", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
