@@ -298,5 +298,11 @@
         SAPI.Speak(text)
     End Sub
 
+    Private Sub Game2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If Not (myGame2 Is Nothing) Then
+            myGame2.checkKey(e.KeyCode)
+        End If
+    End Sub
+
 
 End Class

@@ -460,6 +460,7 @@ Partial Class Main
         Me.Controls.Add(Me.iBookButton)
         Me.Controls.Add(Me.myBrowser)
         Me.Controls.Add(Me.homeButton)
+        Me.KeyPreview = True
         Me.Name = "Main"
         Me.Text = "Main"
         Me.toyPanel.ResumeLayout(False)
