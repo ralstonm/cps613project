@@ -42,33 +42,33 @@ Partial Class Game1
         Me.alphabetGamePanel.Controls.Add(Me.AlphaBetParrotButton)
         Me.alphabetGamePanel.Location = New System.Drawing.Point(0, 1)
         Me.alphabetGamePanel.Name = "alphabetGamePanel"
-        Me.alphabetGamePanel.Size = New System.Drawing.Size(492, 574)
+        Me.alphabetGamePanel.Size = New System.Drawing.Size(422, 622)
         Me.alphabetGamePanel.TabIndex = 10
         '
         'storyBookImage
         '
         Me.storyBookImage.BackColor = System.Drawing.Color.Transparent
-        Me.storyBookImage.Location = New System.Drawing.Point(134, 48)
+        Me.storyBookImage.Location = New System.Drawing.Point(115, 52)
         Me.storyBookImage.Name = "storyBookImage"
-        Me.storyBookImage.Size = New System.Drawing.Size(201, 186)
+        Me.storyBookImage.Size = New System.Drawing.Size(172, 202)
         Me.storyBookImage.TabIndex = 6
         Me.storyBookImage.TabStop = False
         '
         'buttonPlaces
         '
         Me.buttonPlaces.BackColor = System.Drawing.Color.Transparent
-        Me.buttonPlaces.Location = New System.Drawing.Point(0, 294)
+        Me.buttonPlaces.Location = New System.Drawing.Point(0, 319)
         Me.buttonPlaces.Name = "buttonPlaces"
-        Me.buttonPlaces.Size = New System.Drawing.Size(489, 276)
+        Me.buttonPlaces.Size = New System.Drawing.Size(419, 299)
         Me.buttonPlaces.TabIndex = 5
         '
         'pictureBook
         '
         Me.pictureBook.BackgroundImage = Global.Lab5Template.My.Resources.Resources.picturebook
         Me.pictureBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pictureBook.Location = New System.Drawing.Point(104, 29)
+        Me.pictureBook.Location = New System.Drawing.Point(89, 31)
         Me.pictureBook.Name = "pictureBook"
-        Me.pictureBook.Size = New System.Drawing.Size(268, 222)
+        Me.pictureBook.Size = New System.Drawing.Size(230, 241)
         Me.pictureBook.TabIndex = 4
         Me.pictureBook.TabStop = False
         '
@@ -78,18 +78,18 @@ Partial Class Game1
         Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 3)
         Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
-        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(93, 72)
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(80, 78)
         Me.AlphaBetParrotButton.TabIndex = 3
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
         'Game1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.alphabetGamePanel)
         Me.Name = "Game1"
-        Me.Size = New System.Drawing.Size(492, 574)
+        Me.Size = New System.Drawing.Size(422, 622)
         Me.alphabetGamePanel.ResumeLayout(False)
         CType(Me.storyBookImage, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBook, System.ComponentModel.ISupportInitialize).EndInit()

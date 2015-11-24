@@ -1,7 +1,7 @@
 ﻿Public Class SharedResults
 
     Private Sub SharedResults_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
+
         
     End Sub
 
@@ -19,6 +19,10 @@
     End Sub
 
     Private Sub Panel1_Click(sender As Object, e As EventArgs) Handles Panel1.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 End Class

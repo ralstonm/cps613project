@@ -52,10 +52,17 @@
     End Function
 
     Private Sub speak(text As String)
+
+        If (parentFormRef.soundVolume = 0) Then
+            Return
+
+        End If
+
         Debug.Print(text)
         Dim SAPI
         SAPI = CreateObject("SAPI.spvoice")
         SAPI.Speak(text)
+
     End Sub
 
     Private Sub generateGames()
@@ -170,7 +177,17 @@
         Debug.Print(picBoxArray(numOfPics - 1).Location.X)
 
         'If the game is story book mode, show the story book and overlay the story book image
-        If (currentGameType = 1) Then
+
+        If currentGameType = 0 And parentFormRef.soundVolume = 0 Then
+
+            pictureBook.Visible = True
+            storyBookImage.Visible = True
+            storyBookImage.Location = New Point(15, 15)
+            storyBookImage.BackgroundImage = My.Resources.ResourceManager.GetObject(letterResourceList(gamesToPlay(currentGameState)))
+            storyBookImage.BackgroundImageLayout = ImageLayout.Stretch
+            storyBookImage.BringToFront()
+
+        ElseIf (currentGameType = 1) Then
             pictureBook.Visible = True
             storyBookImage.Visible = True
             storyBookImage.Location = New Point(15, 15)
@@ -292,6 +309,9 @@
         resultsScreen = New SharedResults()
         Me.Controls.Add(resultsScreen)
         resultsScreen.BringToFront()
+        If (parentFormRef.soundVolume <> 0) Then
+            My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
+        End If
         ' resultsScreen.Location = New Point(parentFormRef.xOffsetB, parentFormRef.yOffsetB)
         AddHandler resultsScreen.Button1.Click, AddressOf Me.backButton_Click
 
@@ -424,6 +444,10 @@
 
 
     Private Sub buttonPlaces_Paint(sender As Object, e As PaintEventArgs) Handles buttonPlaces.Paint
+
+    End Sub
+
+    Private Sub pictureBook_Click(sender As Object, e As EventArgs) Handles pictureBook.Click
 
     End Sub
 End Class
