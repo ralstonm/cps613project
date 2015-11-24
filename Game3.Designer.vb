@@ -22,29 +22,74 @@ Partial Class Game3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
+        Me.drawingBox = New System.Windows.Forms.PictureBox()
+        Me.backbox = New System.Windows.Forms.PictureBox()
+        Me.Nextbutton = New System.Windows.Forms.Button()
+        CType(Me.drawingBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.backbox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'AlphaBetParrotButton
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(131, 102)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Game 3: Draw Letters"
+        Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
+        Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(138, 12)
+        Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(93, 72)
+        Me.AlphaBetParrotButton.TabIndex = 4
+        Me.AlphaBetParrotButton.Text = " "
+        Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
+        '
+        'drawingBox
+        '
+        Me.drawingBox.BackColor = System.Drawing.Color.Transparent
+        Me.drawingBox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.TracE
+        Me.drawingBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.drawingBox.Location = New System.Drawing.Point(12, 142)
+        Me.drawingBox.Name = "drawingBox"
+        Me.drawingBox.Size = New System.Drawing.Size(430, 412)
+        Me.drawingBox.TabIndex = 5
+        Me.drawingBox.TabStop = False
+        '
+        'backbox
+        '
+        Me.backbox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.traceA
+        Me.backbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.backbox.Location = New System.Drawing.Point(12, 142)
+        Me.backbox.Name = "backbox"
+        Me.backbox.Size = New System.Drawing.Size(448, 412)
+        Me.backbox.TabIndex = 6
+        Me.backbox.TabStop = False
+        '
+        'Nextbutton
+        '
+        Me.Nextbutton.Location = New System.Drawing.Point(177, 90)
+        Me.Nextbutton.Name = "Nextbutton"
+        Me.Nextbutton.Size = New System.Drawing.Size(90, 41)
+        Me.Nextbutton.TabIndex = 7
+        Me.Nextbutton.Text = "Next"
+        Me.Nextbutton.UseVisualStyleBackColor = True
         '
         'Game3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Label1)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Controls.Add(Me.Nextbutton)
+        Me.Controls.Add(Me.drawingBox)
+        Me.Controls.Add(Me.AlphaBetParrotButton)
+        Me.Controls.Add(Me.backbox)
         Me.Name = "Game3"
-        Me.Size = New System.Drawing.Size(422, 622)
+        Me.Size = New System.Drawing.Size(492, 574)
+        CType(Me.drawingBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.backbox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents AlphaBetParrotButton As System.Windows.Forms.Button
+    Friend WithEvents drawingBox As System.Windows.Forms.PictureBox
+    Friend WithEvents backbox As System.Windows.Forms.PictureBox
+    Friend WithEvents Nextbutton As System.Windows.Forms.Button
 
 End Class

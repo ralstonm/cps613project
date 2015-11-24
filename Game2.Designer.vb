@@ -33,9 +33,9 @@ Partial Class Game2
         '
         Me.LetterBox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.question
         Me.LetterBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.LetterBox.Location = New System.Drawing.Point(111, 6)
+        Me.LetterBox.Location = New System.Drawing.Point(129, 6)
         Me.LetterBox.Name = "LetterBox"
-        Me.LetterBox.Size = New System.Drawing.Size(196, 168)
+        Me.LetterBox.Size = New System.Drawing.Size(229, 155)
         Me.LetterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.LetterBox.TabIndex = 6
         Me.LetterBox.TabStop = False
@@ -43,9 +43,10 @@ Partial Class Game2
         'KeyboardPic
         '
         Me.KeyboardPic.BackgroundImage = Global.Lab5Template.My.Resources.Resources.keyboard
-        Me.KeyboardPic.Location = New System.Drawing.Point(52, 180)
+        Me.KeyboardPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.KeyboardPic.Location = New System.Drawing.Point(61, 166)
         Me.KeyboardPic.Name = "KeyboardPic"
-        Me.KeyboardPic.Size = New System.Drawing.Size(329, 155)
+        Me.KeyboardPic.Size = New System.Drawing.Size(384, 143)
         Me.KeyboardPic.TabIndex = 5
         Me.KeyboardPic.TabStop = False
         '
@@ -53,22 +54,22 @@ Partial Class Game2
         '
         Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
         Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 12)
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 11)
         Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
-        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(80, 78)
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(93, 72)
         Me.AlphaBetParrotButton.TabIndex = 4
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
         'Game2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.LetterBox)
         Me.Controls.Add(Me.KeyboardPic)
         Me.Controls.Add(Me.AlphaBetParrotButton)
         Me.Name = "Game2"
-        Me.Size = New System.Drawing.Size(422, 622)
+        Me.Size = New System.Drawing.Size(492, 574)
         CType(Me.LetterBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KeyboardPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

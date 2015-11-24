@@ -5,6 +5,8 @@ Public Class Game2
     Dim counter As Integer = CInt(Int((4 * Rnd()) + 1))
     Dim keyToFind
 
+    'temp change
+    Dim end2 As Integer = 0
     
 
     Public Sub checkKey(keyCode As Object)
@@ -23,7 +25,7 @@ Public Class Game2
         backButton = New SharedBackButton()
         Me.Controls.Add(backButton)
         backButton.BringToFront()
-        backButton.Location = New Point(parentFormRef.xOffsetB, parentFormRef.yOffsetB)
+        backButton.Location = New Point(parentFormRef.xOffsetB + 45, parentFormRef.yOffsetB)
 
 
 
@@ -51,34 +53,42 @@ Public Class Game2
     End Sub
 
     Private Sub InitializeGame()
-
+        If end2 = 3 Then
+            parentFormRef.closeGame2()
+        End If
         Randomize()
         counter = CInt(Int((4 * Rnd()) + 1))
 
-        If (counter = 1) Then
+        If (counter = 1) And (Not end2 = 3) Then
             LetterBox.Image = My.Resources.ablock
             LetterBox.SizeMode = PictureBoxSizeMode.StretchImage
             SAPI.Speak("Can you find the letter A on the keyboard?")
             keyToFind = Keys.A
+            end2 = end2 + 1
         End If
-        If (counter = 2) Then
+        If (counter = 2) And (Not end2 = 3) Then
             LetterBox.Image = My.Resources.cblock
             LetterBox.SizeMode = PictureBoxSizeMode.StretchImage
             SAPI.Speak("Can you find the letter C on the keyboard?")
             keyToFind = Keys.C
+            end2 = end2 + 1
         End If
-        If (counter = 3) Then
+        If (counter = 3) And (Not end2 = 3) Then
             LetterBox.Image = My.Resources.eblock
             LetterBox.SizeMode = PictureBoxSizeMode.StretchImage
             SAPI.Speak("Can you find the letter E on the keyboard?")
             keyToFind = Keys.E
+            end2 = end2 + 1
         End If
-        If (counter = 4) Then
+        If (counter = 4) And (Not end2 = 3) Then
             LetterBox.Image = My.Resources.fblock
             LetterBox.SizeMode = PictureBoxSizeMode.StretchImage
             SAPI.Speak("Can you find the letter F on the keyboard?")
             keyToFind = Keys.F
+            end2 = end2 + 1
         End If
+
+      
 
     End Sub
 
@@ -88,4 +98,5 @@ Public Class Game2
     End Sub
 
 
+    
 End Class

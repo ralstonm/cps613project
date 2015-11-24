@@ -40,6 +40,7 @@
         'ApplePage.Visible = False
         BeePage.Visible = True
         'End If
+        parentFormRef.closeGame5()
     End Sub
 
     Private Sub BButton_Click(sender As Object, e As EventArgs) Handles BButton.Click
