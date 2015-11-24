@@ -48,59 +48,175 @@
     Private Sub IncorrectAnswer()
         speak("Try again")
     End Sub
+    Private Sub AppleCorrect()
+        parrotHelpText = "Can you spell Bee?"
+        'CorrectAnswer()
+        ApplePage.Visible = False
+        BeePage.Visible = True
+        BeePicture.Visible = True
+        BeeLabel.Visible = True
+    End Sub
+    Private Sub BeeCorrect()
+        parrotHelpText = "Can you spell Cab?"
+        'CorrectAnswer()
+        ApplePage.Visible = False
+        BeePage.Visible = False
+        CabPage.Visible = True
+        CabLabel.Visible = True
+        CabPicture.Visible = True
+    End Sub
+    Private Sub CabCorrect()
+
+    End Sub
 
     Private Sub AButton_Click(sender As Object, e As EventArgs) Handles AButton.Click
-        If ApplePage.Visible = True Then
-            AppleLabel.Text = "Apple"
-        ElseIf ApplePage.Visible = False And CabPage.Visible = False Then
+        If ApplePage.Visible = False And CabPage.Visible = False Then
             IncorrectAnswer()
         End If
-        If ApplePage.Visible = True And AppleLabel.Text = "Apple" Then
-            parrotHelpText = "Can you spell Bee?"
-            'CorrectAnswer()
-            ApplePage.Visible = False
-            BeePage.Visible = True
-            BeePicture.Visible = True
-            BeeLabel.Visible = True
+        If ApplePage.Visible = True Then
+            AppleLabel.Text = "Apple"
+            AppleCorrect()
+        End If
+        If CabPage.Visible = True Then
+            If CabLabel.Text = "_ _ _" Then
+                CabLabel.Text = "_ A _"
+                Return
+            End If
+            If CabLabel.Text = "C _ _" Then
+                CabLabel.Text = "C A _"
+                Return
+            End If
+            If CabLabel.Text = "_ A _" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "_ _ B" Then
+                CabLabel.Text = "_ A B"
+                Return
+            End If
+            If CabLabel.Text = "C A _" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "_ A B" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "C _ B" Then
+                CabLabel.Text = "C A B"
+                CabCorrect()
+            End If
         End If
     End Sub
 
     Private Sub BButton_Click(sender As Object, e As EventArgs) Handles BButton.Click
-        If BeePage.Visible = True And BeeLabel.Text = "_ _ _" Then
-            BeeLabel.Text = "B"
+        If BeePage.Visible = False And CabPage.Visible = False Then
+            IncorrectAnswer()
+        End If
+        If BeePage.Visible = True Then
+            If BeeLabel.Text = "_ _ _" Then
+                BeeLabel.Text = "B _ _"
+                Return
+            End If
+            If BeeLabel.Text = "B _ _" Then
+                IncorrectAnswer()
+            End If
+            If BeeLabel.Text = "B E _" Then
+                IncorrectAnswer()
+            End If
+            If BeeLabel.Text = "_ E _" Then
+                BeeLabel.Text = "B E _"
+            End If
+            If BeeLabel.Text = "_ E E" Then
+                BeeLabel.Text = "B E E"
+                BeeCorrect()
+            End If
+        End If
+        If CabPage.Visible = True Then
+            If CabLabel.Text = "_ _ _" Then
+                CabLabel.Text = "_ _ B"
+                Return
+            End If
+            If CabLabel.Text = "C _ _" Then
+                CabLabel.Text = "C _ B"
+                Return
+            End If
+            If CabLabel.Text = "_ A _" Then
+                CabLabel.Text = "_ A B"
+                Return
+            End If
+            If CabLabel.Text = "_ _ B" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "C A _" Then
+                CabLabel.Text = "C A B"
+                CabCorrect()
+            End If
+            If CabLabel.Text = "_ A B" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "C _ B" Then
+                IncorrectAnswer()
+            End If
         End If
     End Sub
 
     Private Sub CButton_Click(sender As Object, e As EventArgs) Handles CButton.Click
-        If CabPage.Visible = True And CabLabel.Text = "_ _ _" Then
-            CabLabel.Text = "C"
+        If CabPage.Visible = True Then
+            If CabLabel.Text = "_ _ _" Then
+                CabLabel.Text = "C _ _"
+                Return
+            End If
+            If CabLabel.Text = "C _ _" Then
+                CabLabel.Text = "C _ B"
+                Return
+            End If
+            If CabLabel.Text = "_ A _" Then
+                CabLabel.Text = "_ A B"
+                Return
+            End If
+            If CabLabel.Text = "_ _ B" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "C A _" Then
+                CabLabel.Text = "C A B"
+                CabCorrect()
+            End If
+            If CabLabel.Text = "_ A B" Then
+                IncorrectAnswer()
+            End If
+            If CabLabel.Text = "C _ B" Then
+                IncorrectAnswer()
+            End If
         Else
             IncorrectAnswer()
         End If
     End Sub
 
     Private Sub DButton_Click(sender As Object, e As EventArgs) Handles DButton.Click
-
+        IncorrectAnswer()
     End Sub
 
     Private Sub EButton_Click(sender As Object, e As EventArgs) Handles EButton.Click
-        If BeePage.Visible = True And BeeLabel.Text = "B" Then
-            BeeLabel.Text = "BE"
+        If BeePage.Visible = False Then
+            IncorrectAnswer()
+        End If
+        If BeePage.Visible = True And BeeLabel.Text = "_ _ _" Then
+            BeeLabel.Text = "_ E _"
             Return
         End If
-        If BeePage.Visible = True And BeeLabel.Text = "BE" Then
-            BeeLabel.Text = "BEE"
-            parrotHelpText = "Can you spell Cab?"
-            'CorrectAnswer()
-            ApplePage.Visible = False
-            BeePage.Visible = False
-            CabPage.Visible = True
-            CabLabel.Visible = True
-            CabPicture.Visible = True
+        If BeePage.Visible = True And BeeLabel.Text = "B _ _" Then
+            BeeLabel.Text = "B E _"
+            Return
+        End If
+        If BeePage.Visible = True And BeeLabel.Text = "_ E _" Then
+            BeeLabel.Text = "_ E E"
+            Return
+        End If
+        If BeePage.Visible = True And BeeLabel.Text = "B E _" Then
+            BeeLabel.Text = "B E E"
+            BeeCorrect()
         End If
     End Sub
 
     Private Sub F_Click(sender As Object, e As EventArgs) Handles FButton.Click
-
+        IncorrectAnswer()
     End Sub
 End Class
