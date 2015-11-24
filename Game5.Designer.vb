@@ -34,8 +34,8 @@ Partial Class Game5
         Me.AButton = New System.Windows.Forms.Button()
         Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
         Me.BeePage = New System.Windows.Forms.Panel()
-        Me.BeePicture = New System.Windows.Forms.Panel()
         Me.BeeLabel = New System.Windows.Forms.Label()
+        Me.BeePicture = New System.Windows.Forms.Panel()
         Me.CabLabel = New System.Windows.Forms.Label()
         Me.CabPicture = New System.Windows.Forms.Panel()
         Me.CabPage = New System.Windows.Forms.Panel()
@@ -47,10 +47,9 @@ Partial Class Game5
         'EmptyPage
         '
         Me.EmptyPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.EmptyPage.Location = New System.Drawing.Point(28, 118)
-        Me.EmptyPage.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.EmptyPage.Location = New System.Drawing.Point(36, 197)
         Me.EmptyPage.Name = "EmptyPage"
-        Me.EmptyPage.Size = New System.Drawing.Size(213, 248)
+        Me.EmptyPage.Size = New System.Drawing.Size(273, 412)
         Me.EmptyPage.TabIndex = 5
         '
         'ApplePage
@@ -58,59 +57,18 @@ Partial Class Game5
         Me.ApplePage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ApplePage.Controls.Add(Me.AppleLabel)
         Me.ApplePage.Controls.Add(Me.ApplePicture)
-        Me.ApplePage.Location = New System.Drawing.Point(245, 118)
-        Me.ApplePage.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ApplePage.Location = New System.Drawing.Point(315, 197)
         Me.ApplePage.Name = "ApplePage"
-        Me.ApplePage.Size = New System.Drawing.Size(213, 248)
+        Me.ApplePage.Size = New System.Drawing.Size(273, 412)
         Me.ApplePage.TabIndex = 6
         '
-<<<<<<< HEAD
-        'BeePage
-        '
-        Me.BeePage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.BeePage.Controls.Add(Me.BeeLabel)
-        Me.BeePage.Controls.Add(Me.BeePicture)
-        Me.BeePage.Location = New System.Drawing.Point(2, 2)
-        Me.BeePage.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.BeePage.Name = "BeePage"
-        Me.BeePage.Size = New System.Drawing.Size(213, 248)
-        Me.BeePage.TabIndex = 7
-        Me.BeePage.Visible = False
-        '
-        'BeeLabel
-        '
-        Me.BeeLabel.AutoSize = True
-        Me.BeeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BeeLabel.Location = New System.Drawing.Point(44, 163)
-        Me.BeeLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.BeeLabel.Name = "BeeLabel"
-        Me.BeeLabel.Size = New System.Drawing.Size(103, 44)
-        Me.BeeLabel.TabIndex = 1
-        Me.BeeLabel.Text = "_ _ _"
-        Me.BeeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BeeLabel.Visible = False
-        '
-        'BeePicture
-        '
-        Me.BeePicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.bee
-        Me.BeePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BeePicture.Location = New System.Drawing.Point(2, 2)
-        Me.BeePicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.BeePicture.Name = "BeePicture"
-        Me.BeePicture.Size = New System.Drawing.Size(209, 124)
-        Me.BeePicture.TabIndex = 0
-        Me.BeePicture.Visible = False
-        '
-=======
->>>>>>> origin/master
         'AppleLabel
         '
         Me.AppleLabel.AutoSize = True
         Me.AppleLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AppleLabel.Location = New System.Drawing.Point(38, 160)
-        Me.AppleLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.AppleLabel.Location = New System.Drawing.Point(49, 267)
         Me.AppleLabel.Name = "AppleLabel"
-        Me.AppleLabel.Size = New System.Drawing.Size(113, 44)
+        Me.AppleLabel.Size = New System.Drawing.Size(165, 64)
         Me.AppleLabel.TabIndex = 1
         Me.AppleLabel.Text = "_pple"
         Me.AppleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -119,44 +77,31 @@ Partial Class Game5
         '
         Me.ApplePicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.apple
         Me.ApplePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ApplePicture.Location = New System.Drawing.Point(-1, 2)
-        Me.ApplePicture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ApplePicture.Location = New System.Drawing.Point(-1, 3)
         Me.ApplePicture.Name = "ApplePicture"
-        Me.ApplePicture.Size = New System.Drawing.Size(209, 124)
+        Me.ApplePicture.Size = New System.Drawing.Size(269, 207)
         Me.ApplePicture.TabIndex = 0
         '
         'FButton
         '
-<<<<<<< HEAD
-        Me.F.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.F.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magnetf
-        Me.F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.F.Location = New System.Drawing.Point(340, 476)
-        Me.F.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.F.Name = "F"
-        Me.F.Size = New System.Drawing.Size(117, 86)
-        Me.F.TabIndex = 12
-        Me.F.UseVisualStyleBackColor = False
-=======
         Me.FButton.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.FButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.FButton.Image = Global.Lab5Template.My.Resources.Resources.magnetf
-        Me.FButton.Location = New System.Drawing.Point(437, 794)
+        Me.FButton.Location = New System.Drawing.Point(437, 793)
+        Me.FButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FButton.Name = "FButton"
-        Me.FButton.Size = New System.Drawing.Size(151, 143)
+        Me.FButton.Size = New System.Drawing.Size(150, 143)
         Me.FButton.TabIndex = 12
         Me.FButton.UseVisualStyleBackColor = False
->>>>>>> origin/master
         '
         'EButton
         '
         Me.EButton.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.EButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magnete
         Me.EButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.EButton.Location = New System.Drawing.Point(184, 476)
-        Me.EButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.EButton.Location = New System.Drawing.Point(237, 793)
         Me.EButton.Name = "EButton"
-        Me.EButton.Size = New System.Drawing.Size(117, 86)
+        Me.EButton.Size = New System.Drawing.Size(150, 143)
         Me.EButton.TabIndex = 11
         Me.EButton.UseVisualStyleBackColor = False
         '
@@ -165,10 +110,9 @@ Partial Class Game5
         Me.DButton.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.DButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magnetd
         Me.DButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.DButton.Location = New System.Drawing.Point(28, 476)
-        Me.DButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DButton.Location = New System.Drawing.Point(36, 793)
         Me.DButton.Name = "DButton"
-        Me.DButton.Size = New System.Drawing.Size(117, 86)
+        Me.DButton.Size = New System.Drawing.Size(150, 143)
         Me.DButton.TabIndex = 10
         Me.DButton.UseVisualStyleBackColor = False
         '
@@ -177,10 +121,9 @@ Partial Class Game5
         Me.CButton.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.CButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magnetc
         Me.CButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CButton.Location = New System.Drawing.Point(340, 380)
-        Me.CButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CButton.Location = New System.Drawing.Point(437, 633)
         Me.CButton.Name = "CButton"
-        Me.CButton.Size = New System.Drawing.Size(117, 86)
+        Me.CButton.Size = New System.Drawing.Size(150, 143)
         Me.CButton.TabIndex = 9
         Me.CButton.UseVisualStyleBackColor = False
         '
@@ -189,10 +132,9 @@ Partial Class Game5
         Me.BButton.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.BButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magnetb
         Me.BButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BButton.Location = New System.Drawing.Point(184, 380)
-        Me.BButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BButton.Location = New System.Drawing.Point(237, 633)
         Me.BButton.Name = "BButton"
-        Me.BButton.Size = New System.Drawing.Size(117, 86)
+        Me.BButton.Size = New System.Drawing.Size(150, 143)
         Me.BButton.TabIndex = 8
         Me.BButton.UseVisualStyleBackColor = False
         '
@@ -201,10 +143,9 @@ Partial Class Game5
         Me.AButton.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.AButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magneta
         Me.AButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AButton.Location = New System.Drawing.Point(28, 380)
-        Me.AButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.AButton.Location = New System.Drawing.Point(36, 633)
         Me.AButton.Name = "AButton"
-        Me.AButton.Size = New System.Drawing.Size(117, 86)
+        Me.AButton.Size = New System.Drawing.Size(150, 143)
         Me.AButton.TabIndex = 7
         Me.AButton.UseVisualStyleBackColor = False
         '
@@ -212,9 +153,10 @@ Partial Class Game5
         '
         Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
         Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 3)
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(4, 5)
+        Me.AlphaBetParrotButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
-        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(96, 100)
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(123, 167)
         Me.AlphaBetParrotButton.TabIndex = 4
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
@@ -230,21 +172,11 @@ Partial Class Game5
         Me.BeePage.TabIndex = 7
         Me.BeePage.Visible = False
         '
-        'BeePicture
-        '
-        Me.BeePicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.bee
-        Me.BeePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BeePicture.Location = New System.Drawing.Point(3, 3)
-        Me.BeePicture.Name = "BeePicture"
-        Me.BeePicture.Size = New System.Drawing.Size(269, 206)
-        Me.BeePicture.TabIndex = 0
-        Me.BeePicture.Visible = False
-        '
         'BeeLabel
         '
         Me.BeeLabel.AutoSize = True
         Me.BeeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BeeLabel.Location = New System.Drawing.Point(57, 271)
+        Me.BeeLabel.Location = New System.Drawing.Point(49, 267)
         Me.BeeLabel.Name = "BeeLabel"
         Me.BeeLabel.Size = New System.Drawing.Size(151, 64)
         Me.BeeLabel.TabIndex = 1
@@ -252,11 +184,22 @@ Partial Class Game5
         Me.BeeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BeeLabel.Visible = False
         '
+        'BeePicture
+        '
+        Me.BeePicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.bee
+        Me.BeePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BeePicture.Location = New System.Drawing.Point(4, 5)
+        Me.BeePicture.Name = "BeePicture"
+        Me.BeePicture.Size = New System.Drawing.Size(269, 207)
+        Me.BeePicture.TabIndex = 0
+        Me.BeePicture.Visible = False
+        '
         'CabLabel
         '
         Me.CabLabel.AutoSize = True
         Me.CabLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CabLabel.Location = New System.Drawing.Point(57, 271)
+        Me.CabLabel.Location = New System.Drawing.Point(49, 267)
+        Me.CabLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CabLabel.Name = "CabLabel"
         Me.CabLabel.Size = New System.Drawing.Size(151, 64)
         Me.CabLabel.TabIndex = 1
@@ -268,9 +211,10 @@ Partial Class Game5
         '
         Me.CabPicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.cab
         Me.CabPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CabPicture.Location = New System.Drawing.Point(3, 3)
+        Me.CabPicture.Location = New System.Drawing.Point(4, 5)
+        Me.CabPicture.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CabPicture.Name = "CabPicture"
-        Me.CabPicture.Size = New System.Drawing.Size(269, 206)
+        Me.CabPicture.Size = New System.Drawing.Size(269, 207)
         Me.CabPicture.TabIndex = 0
         Me.CabPicture.Visible = False
         '
@@ -279,7 +223,8 @@ Partial Class Game5
         Me.CabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CabPage.Controls.Add(Me.CabLabel)
         Me.CabPage.Controls.Add(Me.CabPicture)
-        Me.CabPage.Location = New System.Drawing.Point(322, 197)
+        Me.CabPage.Location = New System.Drawing.Point(315, 197)
+        Me.CabPage.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CabPage.Name = "CabPage"
         Me.CabPage.Size = New System.Drawing.Size(273, 412)
         Me.CabPage.TabIndex = 8
@@ -287,7 +232,7 @@ Partial Class Game5
         '
         'Game5
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.CabPage)
@@ -301,8 +246,9 @@ Partial Class Game5
         Me.Controls.Add(Me.ApplePage)
         Me.Controls.Add(Me.EmptyPage)
         Me.Controls.Add(Me.AlphaBetParrotButton)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Game5"
-        Me.Size = New System.Drawing.Size(492, 574)
+        Me.Size = New System.Drawing.Size(633, 957)
         Me.ApplePage.ResumeLayout(False)
         Me.ApplePage.PerformLayout()
         Me.BeePage.ResumeLayout(False)

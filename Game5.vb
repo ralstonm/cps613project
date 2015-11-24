@@ -15,8 +15,8 @@
 
         'Add a clickhandler to the actual button on the backbutton
         AddHandler backButton.Button1.Click, AddressOf Me.backButton_Click
-        'speak("Hello! Can you pick the letter that apple starts with?")
         parrotHelpText = "Hello! Can you pick the letter that apple starts with?"
+        speak(parrotHelpText)
     End Sub
 
     Private Sub backButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -50,7 +50,7 @@
     End Sub
     Private Sub AppleCorrect()
         parrotHelpText = "Can you spell Bee?"
-        'CorrectAnswer()
+        CorrectAnswer()
         ApplePage.Visible = False
         BeePage.Visible = True
         BeePicture.Visible = True
@@ -58,7 +58,7 @@
     End Sub
     Private Sub BeeCorrect()
         parrotHelpText = "Can you spell Cab?"
-        'CorrectAnswer()
+        CorrectAnswer()
         ApplePage.Visible = False
         BeePage.Visible = False
         CabPage.Visible = True
@@ -66,27 +66,15 @@
         CabPicture.Visible = True
     End Sub
     Private Sub CabCorrect()
-
+        My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
+        parentFormRef.closeGame5()
     End Sub
 
     Private Sub AButton_Click(sender As Object, e As EventArgs) Handles AButton.Click
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ' If ApplePage.Visible = True Then
-        AppleLabel.Text = "Apple"
-        SAPI = CreateObject("SAPI.spvoice")
-        SAPI.Speak("Good job!")
-        System.Threading.Thread.Sleep(1000)
-        'ApplePage.Visible = False
-        BeePage.Visible = True
-        'End If
-        parentFormRef.closeGame5()
-=======
-=======
+
         If ApplePage.Visible = False And CabPage.Visible = False Then
             IncorrectAnswer()
         End If
->>>>>>> origin/master
         If ApplePage.Visible = True Then
             AppleLabel.Text = "Apple"
             AppleCorrect()
@@ -118,7 +106,6 @@
                 CabCorrect()
             End If
         End If
->>>>>>> origin/master
     End Sub
 
     Private Sub BButton_Click(sender As Object, e As EventArgs) Handles BButton.Click
