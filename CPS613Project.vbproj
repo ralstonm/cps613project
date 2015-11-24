@@ -639,6 +639,7 @@
     <None Include="Resources\happy-colorful-background.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\Q.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -652,6 +653,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TracE.png" />
+=======
+    <None Include="Resources\cab.png" />
+>>>>>>> origin/master
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

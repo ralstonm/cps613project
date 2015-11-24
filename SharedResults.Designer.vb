@@ -29,7 +29,7 @@ Partial Class SharedResults
         '
         'Button1
         '
-        Me.Button1.BackgroundImage = Global.Lab5Template.My.Resources.Resources.happy_colorful_background
+        Me.Button1.BackgroundImage = Global.Lab5Template.My.Resources.Resources.happycolorfulbackground
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.Location = New System.Drawing.Point(-2, -1)
         Me.Button1.Name = "Button1"
@@ -50,7 +50,7 @@ Partial Class SharedResults
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Lab5Template.My.Resources.Resources.happy_colorful_background
+        Me.BackgroundImage = Global.Lab5Template.My.Resources.Resources.happycolorfulbackground
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True

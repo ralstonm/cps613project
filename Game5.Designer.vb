@@ -24,20 +24,24 @@ Partial Class Game5
     Private Sub InitializeComponent()
         Me.EmptyPage = New System.Windows.Forms.Panel()
         Me.ApplePage = New System.Windows.Forms.Panel()
-        Me.BeePage = New System.Windows.Forms.Panel()
-        Me.BeeLabel = New System.Windows.Forms.Label()
-        Me.BeePicture = New System.Windows.Forms.Panel()
         Me.AppleLabel = New System.Windows.Forms.Label()
         Me.ApplePicture = New System.Windows.Forms.Panel()
-        Me.F = New System.Windows.Forms.Button()
+        Me.FButton = New System.Windows.Forms.Button()
         Me.EButton = New System.Windows.Forms.Button()
         Me.DButton = New System.Windows.Forms.Button()
         Me.CButton = New System.Windows.Forms.Button()
         Me.BButton = New System.Windows.Forms.Button()
         Me.AButton = New System.Windows.Forms.Button()
         Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
+        Me.BeePage = New System.Windows.Forms.Panel()
+        Me.BeePicture = New System.Windows.Forms.Panel()
+        Me.BeeLabel = New System.Windows.Forms.Label()
+        Me.CabLabel = New System.Windows.Forms.Label()
+        Me.CabPicture = New System.Windows.Forms.Panel()
+        Me.CabPage = New System.Windows.Forms.Panel()
         Me.ApplePage.SuspendLayout()
         Me.BeePage.SuspendLayout()
+        Me.CabPage.SuspendLayout()
         Me.SuspendLayout()
         '
         'EmptyPage
@@ -52,7 +56,6 @@ Partial Class Game5
         'ApplePage
         '
         Me.ApplePage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ApplePage.Controls.Add(Me.BeePage)
         Me.ApplePage.Controls.Add(Me.AppleLabel)
         Me.ApplePage.Controls.Add(Me.ApplePicture)
         Me.ApplePage.Location = New System.Drawing.Point(245, 118)
@@ -61,6 +64,7 @@ Partial Class Game5
         Me.ApplePage.Size = New System.Drawing.Size(213, 248)
         Me.ApplePage.TabIndex = 6
         '
+<<<<<<< HEAD
         'BeePage
         '
         Me.BeePage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -97,6 +101,8 @@ Partial Class Game5
         Me.BeePicture.TabIndex = 0
         Me.BeePicture.Visible = False
         '
+=======
+>>>>>>> origin/master
         'AppleLabel
         '
         Me.AppleLabel.AutoSize = True
@@ -119,8 +125,9 @@ Partial Class Game5
         Me.ApplePicture.Size = New System.Drawing.Size(209, 124)
         Me.ApplePicture.TabIndex = 0
         '
-        'F
+        'FButton
         '
+<<<<<<< HEAD
         Me.F.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.F.BackgroundImage = Global.Lab5Template.My.Resources.Resources.magnetf
         Me.F.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -130,6 +137,16 @@ Partial Class Game5
         Me.F.Size = New System.Drawing.Size(117, 86)
         Me.F.TabIndex = 12
         Me.F.UseVisualStyleBackColor = False
+=======
+        Me.FButton.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.FButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FButton.Image = Global.Lab5Template.My.Resources.Resources.magnetf
+        Me.FButton.Location = New System.Drawing.Point(437, 794)
+        Me.FButton.Name = "FButton"
+        Me.FButton.Size = New System.Drawing.Size(151, 143)
+        Me.FButton.TabIndex = 12
+        Me.FButton.UseVisualStyleBackColor = False
+>>>>>>> origin/master
         '
         'EButton
         '
@@ -202,12 +219,80 @@ Partial Class Game5
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
+        'BeePage
+        '
+        Me.BeePage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.BeePage.Controls.Add(Me.BeeLabel)
+        Me.BeePage.Controls.Add(Me.BeePicture)
+        Me.BeePage.Location = New System.Drawing.Point(315, 197)
+        Me.BeePage.Name = "BeePage"
+        Me.BeePage.Size = New System.Drawing.Size(273, 412)
+        Me.BeePage.TabIndex = 7
+        Me.BeePage.Visible = False
+        '
+        'BeePicture
+        '
+        Me.BeePicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.bee
+        Me.BeePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BeePicture.Location = New System.Drawing.Point(3, 3)
+        Me.BeePicture.Name = "BeePicture"
+        Me.BeePicture.Size = New System.Drawing.Size(269, 206)
+        Me.BeePicture.TabIndex = 0
+        Me.BeePicture.Visible = False
+        '
+        'BeeLabel
+        '
+        Me.BeeLabel.AutoSize = True
+        Me.BeeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BeeLabel.Location = New System.Drawing.Point(57, 271)
+        Me.BeeLabel.Name = "BeeLabel"
+        Me.BeeLabel.Size = New System.Drawing.Size(151, 64)
+        Me.BeeLabel.TabIndex = 1
+        Me.BeeLabel.Text = "_ _ _"
+        Me.BeeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BeeLabel.Visible = False
+        '
+        'CabLabel
+        '
+        Me.CabLabel.AutoSize = True
+        Me.CabLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CabLabel.Location = New System.Drawing.Point(57, 271)
+        Me.CabLabel.Name = "CabLabel"
+        Me.CabLabel.Size = New System.Drawing.Size(151, 64)
+        Me.CabLabel.TabIndex = 1
+        Me.CabLabel.Text = "_ _ _"
+        Me.CabLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CabLabel.Visible = False
+        '
+        'CabPicture
+        '
+        Me.CabPicture.BackgroundImage = Global.Lab5Template.My.Resources.Resources.cab
+        Me.CabPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CabPicture.Location = New System.Drawing.Point(3, 3)
+        Me.CabPicture.Name = "CabPicture"
+        Me.CabPicture.Size = New System.Drawing.Size(269, 206)
+        Me.CabPicture.TabIndex = 0
+        Me.CabPicture.Visible = False
+        '
+        'CabPage
+        '
+        Me.CabPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CabPage.Controls.Add(Me.CabLabel)
+        Me.CabPage.Controls.Add(Me.CabPicture)
+        Me.CabPage.Location = New System.Drawing.Point(322, 197)
+        Me.CabPage.Name = "CabPage"
+        Me.CabPage.Size = New System.Drawing.Size(273, 412)
+        Me.CabPage.TabIndex = 8
+        Me.CabPage.Visible = False
+        '
         'Game5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.F)
+        Me.Controls.Add(Me.CabPage)
+        Me.Controls.Add(Me.BeePage)
+        Me.Controls.Add(Me.FButton)
         Me.Controls.Add(Me.EButton)
         Me.Controls.Add(Me.DButton)
         Me.Controls.Add(Me.CButton)
@@ -222,6 +307,8 @@ Partial Class Game5
         Me.ApplePage.PerformLayout()
         Me.BeePage.ResumeLayout(False)
         Me.BeePage.PerformLayout()
+        Me.CabPage.ResumeLayout(False)
+        Me.CabPage.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -230,14 +317,17 @@ Partial Class Game5
     Friend WithEvents ApplePage As System.Windows.Forms.Panel
     Friend WithEvents AppleLabel As System.Windows.Forms.Label
     Friend WithEvents ApplePicture As System.Windows.Forms.Panel
-    Friend WithEvents BeePage As System.Windows.Forms.Panel
-    Friend WithEvents BeeLabel As System.Windows.Forms.Label
-    Friend WithEvents BeePicture As System.Windows.Forms.Panel
     Friend WithEvents AButton As System.Windows.Forms.Button
     Friend WithEvents BButton As System.Windows.Forms.Button
     Friend WithEvents CButton As System.Windows.Forms.Button
-    Friend WithEvents F As System.Windows.Forms.Button
+    Friend WithEvents FButton As System.Windows.Forms.Button
     Friend WithEvents EButton As System.Windows.Forms.Button
     Friend WithEvents DButton As System.Windows.Forms.Button
+    Friend WithEvents BeePage As System.Windows.Forms.Panel
+    Friend WithEvents BeeLabel As System.Windows.Forms.Label
+    Friend WithEvents BeePicture As System.Windows.Forms.Panel
+    Friend WithEvents CabLabel As System.Windows.Forms.Label
+    Friend WithEvents CabPicture As System.Windows.Forms.Panel
+    Friend WithEvents CabPage As System.Windows.Forms.Panel
 
 End Class
