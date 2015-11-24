@@ -66,12 +66,12 @@
         CabPicture.Visible = True
     End Sub
     Private Sub CabCorrect()
+        Threading.Thread.Sleep(500)
         My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
         parentFormRef.closeGame5()
     End Sub
 
     Private Sub AButton_Click(sender As Object, e As EventArgs) Handles AButton.Click
-
         If ApplePage.Visible = False And CabPage.Visible = False Then
             IncorrectAnswer()
         End If
@@ -167,22 +167,22 @@
                 Return
             End If
             If CabLabel.Text = "C _ _" Then
-                CabLabel.Text = "C _ B"
-                Return
+                IncorrectAnswer()
             End If
             If CabLabel.Text = "_ A _" Then
-                CabLabel.Text = "_ A B"
+                CabLabel.Text = "C A _"
                 Return
             End If
             If CabLabel.Text = "_ _ B" Then
-                IncorrectAnswer()
+                CabLabel.Text = "C _ B"
+                Return
             End If
             If CabLabel.Text = "C A _" Then
-                CabLabel.Text = "C A B"
-                CabCorrect()
+                IncorrectAnswer()
             End If
             If CabLabel.Text = "_ A B" Then
-                IncorrectAnswer()
+                CabLabel.Text = "C A B"
+                CabCorrect()
             End If
             If CabLabel.Text = "C _ B" Then
                 IncorrectAnswer()
@@ -218,7 +218,7 @@
         End If
     End Sub
 
-    Private Sub F_Click(sender As Object, e As EventArgs) Handles FButton.Click
+    Private Sub FButton_Click(sender As Object, e As EventArgs) Handles FButton.Click
         IncorrectAnswer()
     End Sub
 End Class
