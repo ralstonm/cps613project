@@ -190,6 +190,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cab() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cab", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Calender() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Calender", resourceCulture)
@@ -400,10 +410,10 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property happy_colorful_background() As System.Drawing.Bitmap
+        Friend ReadOnly Property happycolorfulbackground() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("happy-colorful-background", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Dim obj As Object = ResourceManager.GetObject("happycolorfulbackground", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
         
