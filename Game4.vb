@@ -2,6 +2,7 @@
 
     Public parentFormRef As Main
     Dim backButton As SharedBackButton
+    Dim resultsScreen As SharedResults
     Dim SAPI
     Dim counter As Integer
 
@@ -17,7 +18,7 @@
         AddHandler backButton.Button1.Click, AddressOf Me.backButton_Click
 
         SAPI = CreateObject("SAPI.spvoice")
-        SAPI.Speak("Hello! Can you say the sound that A makes? Press the microphone when you want to talk.")
+        SAPI.Speak("Hello! Can you say the sound that, A, makes? Press the microphone when you want to talk.")
 
         counter = 0
     End Sub
@@ -36,13 +37,15 @@
     End Sub
 
     Private Sub MicrophoneButton_Click(sender As Object, e As EventArgs) Handles MicrophoneButton.Click
-        Me.MicrophoneButton.BackColor = Color.Red
+        'I have no idea why this doesn't work
+        RecordingPictureBox.Visible = True
         System.Threading.Thread.Sleep(1000)
         SAPI.Speak("Good job!")
-        Me.MicrophoneButton.BackColor = Color.White
+        'It should show a red circle when the microphone is "listening" but it doesn't
+        RecordingPictureBox.Visible = False
         counter = counter + 1
-        If (counter = 1) Then SAPI.Speak("Can you say the sound that B makes?")
-        If (counter = 2) Then SAPI.Speak("Can you say the sound that C makes?")
+        If (counter = 1) Then SAPI.Speak("Can you say the sound that, B, makes?")
+        If (counter = 2) Then SAPI.Speak("Can you say the sound that, C, makes?")
         If (counter = 3) Then
             Me.PictureBoxA.Visible = False
             Me.PictureBoxB.Visible = False
@@ -51,13 +54,22 @@
             Me.PictureBoxD.Visible = True
             Me.PictureBoxE.Visible = True
             Me.PictureBoxF.Visible = True
-            SAPI.Speak("Can you say the sound that E makes?")
+            SAPI.Speak("Can you say the sound that, E, makes?")
         End If
-        If (counter = 4) Then SAPI.Speak("Can you say the sound that D makes?")
-        If (counter = 5) Then SAPI.Speak("Can you say the sound that F makes?")
+        If (counter = 4) Then SAPI.Speak("Can you say the sound that, D, makes?")
+        If (counter = 5) Then SAPI.Speak("Can you say the sound that, F, makes?")
         If (counter = 6) Then
             My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
             parentFormRef.closeGame4()
         End If
+    End Sub
+    Private Sub endGame()
+        resultsScreen = New SharedResults()
+        Me.Controls.Add(resultsScreen)
+        resultsScreen.BringToFront()
+        If (parentFormRef.soundVolume <> 0) Then
+            My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
+        End If
+        AddHandler resultsScreen.Button1.Click, AddressOf Me.backButton_Click
     End Sub
 End Class

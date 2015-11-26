@@ -236,7 +236,7 @@
         genericPanel.SendToBack()
     End Sub
 
-    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles SfariButton.Click
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles SafariButton.Click
         myBrowser.Visible = True
         temp = New Uri("https://www.google.com")
         myBrowser.Url = temp

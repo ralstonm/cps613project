@@ -27,6 +27,9 @@
         speak(parrotHelpText)
     End Sub
     Private Sub speak(text As String)
+        If (parentFormRef.soundVolume = 0) Then
+            Return
+        End If
         Debug.Print(text)
         Dim SAPI
         SAPI = CreateObject("SAPI.spvoice")
@@ -76,33 +79,33 @@
             IncorrectAnswer()
         End If
         If ApplePage.Visible = True Then
-            AppleLabel.Text = "Apple"
+            AppleLabel.Text = "apple"
             AppleCorrect()
         End If
         If CabPage.Visible = True Then
             If CabLabel.Text = "_ _ _" Then
-                CabLabel.Text = "_ A _"
+                CabLabel.Text = "_ s _"
                 Return
             End If
             If CabLabel.Text = "C _ _" Then
-                CabLabel.Text = "C A _"
+                CabLabel.Text = "c a _"
                 Return
             End If
-            If CabLabel.Text = "_ A _" Then
+            If CabLabel.Text = "_ a _" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "_ _ B" Then
-                CabLabel.Text = "_ A B"
+            If CabLabel.Text = "_ _ b" Then
+                CabLabel.Text = "_ a b"
                 Return
             End If
-            If CabLabel.Text = "C A _" Then
+            If CabLabel.Text = "c a _" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "_ A B" Then
+            If CabLabel.Text = "_ a b" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "C _ B" Then
-                CabLabel.Text = "C A B"
+            If CabLabel.Text = "c _ b" Then
+                CabLabel.Text = "c a b"
                 CabCorrect()
             End If
         End If
@@ -114,47 +117,47 @@
         End If
         If BeePage.Visible = True Then
             If BeeLabel.Text = "_ _ _" Then
-                BeeLabel.Text = "B _ _"
+                BeeLabel.Text = "b _ _"
                 Return
             End If
-            If BeeLabel.Text = "B _ _" Then
+            If BeeLabel.Text = "b _ _" Then
                 IncorrectAnswer()
             End If
-            If BeeLabel.Text = "B E _" Then
+            If BeeLabel.Text = "b e _" Then
                 IncorrectAnswer()
             End If
-            If BeeLabel.Text = "_ E _" Then
-                BeeLabel.Text = "B E _"
+            If BeeLabel.Text = "_ e _" Then
+                BeeLabel.Text = "b e _"
             End If
-            If BeeLabel.Text = "_ E E" Then
-                BeeLabel.Text = "B E E"
+            If BeeLabel.Text = "_ e e" Then
+                BeeLabel.Text = "b e e"
                 BeeCorrect()
             End If
         End If
         If CabPage.Visible = True Then
             If CabLabel.Text = "_ _ _" Then
-                CabLabel.Text = "_ _ B"
+                CabLabel.Text = "_ _ b"
                 Return
             End If
-            If CabLabel.Text = "C _ _" Then
-                CabLabel.Text = "C _ B"
+            If CabLabel.Text = "c _ _" Then
+                CabLabel.Text = "c _ b"
                 Return
             End If
-            If CabLabel.Text = "_ A _" Then
-                CabLabel.Text = "_ A B"
+            If CabLabel.Text = "_ a _" Then
+                CabLabel.Text = "_ a b"
                 Return
             End If
-            If CabLabel.Text = "_ _ B" Then
+            If CabLabel.Text = "_ _ b" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "C A _" Then
-                CabLabel.Text = "C A B"
+            If CabLabel.Text = "c a _" Then
+                CabLabel.Text = "c a b"
                 CabCorrect()
             End If
-            If CabLabel.Text = "_ A B" Then
+            If CabLabel.Text = "_ a b" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "C _ B" Then
+            If CabLabel.Text = "c _ b" Then
                 IncorrectAnswer()
             End If
         End If
@@ -163,28 +166,28 @@
     Private Sub CButton_Click(sender As Object, e As EventArgs) Handles CButton.Click
         If CabPage.Visible = True Then
             If CabLabel.Text = "_ _ _" Then
-                CabLabel.Text = "C _ _"
+                CabLabel.Text = "c _ _"
                 Return
             End If
-            If CabLabel.Text = "C _ _" Then
+            If CabLabel.Text = "c _ _" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "_ A _" Then
-                CabLabel.Text = "C A _"
+            If CabLabel.Text = "_ a _" Then
+                CabLabel.Text = "c a _"
                 Return
             End If
-            If CabLabel.Text = "_ _ B" Then
-                CabLabel.Text = "C _ B"
+            If CabLabel.Text = "_ _ b" Then
+                CabLabel.Text = "c _ b"
                 Return
             End If
-            If CabLabel.Text = "C A _" Then
+            If CabLabel.Text = "c a _" Then
                 IncorrectAnswer()
             End If
-            If CabLabel.Text = "_ A B" Then
-                CabLabel.Text = "C A B"
+            If CabLabel.Text = "_ a b" Then
+                CabLabel.Text = "c a b"
                 CabCorrect()
             End If
-            If CabLabel.Text = "C _ B" Then
+            If CabLabel.Text = "c _ b" Then
                 IncorrectAnswer()
             End If
         Else
@@ -201,19 +204,19 @@
             IncorrectAnswer()
         End If
         If BeePage.Visible = True And BeeLabel.Text = "_ _ _" Then
-            BeeLabel.Text = "_ E _"
+            BeeLabel.Text = "_ e _"
             Return
         End If
-        If BeePage.Visible = True And BeeLabel.Text = "B _ _" Then
-            BeeLabel.Text = "B E _"
+        If BeePage.Visible = True And BeeLabel.Text = "b _ _" Then
+            BeeLabel.Text = "b e _"
             Return
         End If
-        If BeePage.Visible = True And BeeLabel.Text = "_ E _" Then
-            BeeLabel.Text = "_ E E"
+        If BeePage.Visible = True And BeeLabel.Text = "_ e _" Then
+            BeeLabel.Text = "_ e e"
             Return
         End If
-        If BeePage.Visible = True And BeeLabel.Text = "B E _" Then
-            BeeLabel.Text = "B E E"
+        If BeePage.Visible = True And BeeLabel.Text = "b e _" Then
+            BeeLabel.Text = "b e e"
             BeeCorrect()
         End If
     End Sub

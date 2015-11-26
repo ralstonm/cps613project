@@ -7,7 +7,6 @@
     Dim parrotHelpText
     'How many letters do we actually have?
     Dim letterRange = 26
-
     'What game are we on?
     Dim currentGameState
     'Type of game? 1 for picture, 2 for just sounding out
@@ -27,8 +26,6 @@
 
     'Reusable array for the letter tiles
     Dim picBoxArray()
-
-
 
     Public Sub New(ByRef parentForm As Main)
         'Custom constructor to keep a reference to the Main Form
@@ -430,24 +427,12 @@
             point = newPoint
 
         End If
-
-
     End Sub
-
 
     Private Sub DragDrop_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
         Dim control As Control = CType(sender, Control)
 
         control.Capture = False
-
-    End Sub
-
-
-    Private Sub buttonPlaces_Paint(sender As Object, e As PaintEventArgs) Handles buttonPlaces.Paint
-
-    End Sub
-
-    Private Sub pictureBook_Click(sender As Object, e As EventArgs) Handles pictureBook.Click
 
     End Sub
 End Class
