@@ -14,6 +14,8 @@
     'Array of all games that will be played
     Dim gamesToPlay()
 
+    Dim dragging As Boolean
+
     Dim point As New Point()
 
     Private m_MouseIsDown As Boolean = False
@@ -332,7 +334,12 @@
 
         generateGames()
 
+        dragging = False
 
+        If (parentFormRef.soundVolume = 0) Then
+            AlphaBetParrotButton.BackgroundImage = My.Resources.ResourceManager.GetObject("exparrot")
+            AlphaBetParrotButton.BackgroundImageLayout = ImageLayout.Stretch
+        End If
 
 
 
@@ -340,11 +347,23 @@
 
     Private Sub backButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Calls Parent Form to Close Settings and delete Object
+        If (Not (resultsScreen Is Nothing)) Then
+            Me.Controls.Remove(resultsScreen)
+            'Dispose of the object
+
+            resultsScreen.Dispose()
+        End If
+
         parentFormRef.closeGame1()
     End Sub
 
     Private Sub rightButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Calls Parent Form to Close Settings and delete Object
+
+        If (dragging = True) Then
+            Return
+        End If
+
         speak("That's right!")
 
         If currentGameType = 0 Then
@@ -359,6 +378,11 @@
 
     Private Sub wrongButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Calls Parent Form to Close Settings and delete Object
+
+        If (dragging = True) Then
+            Return
+        End If
+
         speak("That's not the right letter!")
         sender.Visible = False
     End Sub
@@ -426,6 +450,8 @@
 
             point = newPoint
 
+            dragging = True
+
         End If
     End Sub
 
@@ -433,6 +459,8 @@
         Dim control As Control = CType(sender, Control)
 
         control.Capture = False
+
+        dragging = False
 
     End Sub
 End Class
