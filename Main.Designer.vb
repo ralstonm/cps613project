@@ -41,6 +41,7 @@ Partial Class Main
         Me.myBrowser = New System.Windows.Forms.WebBrowser()
         Me.homeButton = New System.Windows.Forms.Button()
         Me.toyPanel = New System.Windows.Forms.Panel()
+        Me.genericPanel = New System.Windows.Forms.Panel()
         Me.startButton = New System.Windows.Forms.Button()
         Me.drawingLetterGame = New System.Windows.Forms.Button()
         Me.typingGame = New System.Windows.Forms.Button()
@@ -50,7 +51,6 @@ Partial Class Main
         Me.soundLetterGame = New System.Windows.Forms.Button()
         Me.parrotButton = New System.Windows.Forms.Button()
         Me.alphabetGameButton = New System.Windows.Forms.Button()
-        Me.genericPanel = New System.Windows.Forms.Panel()
         Me.toyPanel.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,9 +61,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.iBookButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.IBooks
         Me.iBookButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.iBookButton.Location = New System.Drawing.Point(91, 140)
+        Me.iBookButton.Location = New System.Drawing.Point(106, 129)
         Me.iBookButton.Name = "iBookButton"
-        Me.iBookButton.Size = New System.Drawing.Size(81, 85)
+        Me.iBookButton.Size = New System.Drawing.Size(94, 78)
         Me.iBookButton.TabIndex = 0
         Me.iBookButton.Text = " "
         Me.iBookButton.UseVisualStyleBackColor = True
@@ -75,9 +75,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button2.BackgroundImage = Global.Lab5Template.My.Resources.Resources.Iphoto
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(192, 140)
+        Me.Button2.Location = New System.Drawing.Point(224, 129)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(81, 85)
+        Me.Button2.Size = New System.Drawing.Size(94, 78)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = " "
         Me.Button2.UseVisualStyleBackColor = True
@@ -89,9 +89,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button3.BackgroundImage = Global.Lab5Template.My.Resources.Resources.googlemap
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(290, 140)
+        Me.Button3.Location = New System.Drawing.Point(338, 129)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(81, 85)
+        Me.Button3.Size = New System.Drawing.Size(94, 78)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = " "
         Me.Button3.UseVisualStyleBackColor = True
@@ -103,9 +103,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button4.BackgroundImage = Global.Lab5Template.My.Resources.Resources.icon320x320
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Location = New System.Drawing.Point(385, 140)
+        Me.Button4.Location = New System.Drawing.Point(449, 129)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(81, 85)
+        Me.Button4.Size = New System.Drawing.Size(94, 78)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = " "
         Me.Button4.UseVisualStyleBackColor = True
@@ -117,9 +117,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button5.BackgroundImage = Global.Lab5Template.My.Resources.Resources.Contact
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.Location = New System.Drawing.Point(385, 257)
+        Me.Button5.Location = New System.Drawing.Point(449, 237)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(81, 85)
+        Me.Button5.Size = New System.Drawing.Size(94, 78)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = " "
         Me.Button5.UseVisualStyleBackColor = True
@@ -131,9 +131,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button6.BackgroundImage = Global.Lab5Template.My.Resources.Resources.Store
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.Location = New System.Drawing.Point(290, 257)
+        Me.Button6.Location = New System.Drawing.Point(338, 237)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(81, 85)
+        Me.Button6.Size = New System.Drawing.Size(94, 78)
         Me.Button6.TabIndex = 6
         Me.Button6.Text = " "
         Me.Button6.UseVisualStyleBackColor = True
@@ -145,9 +145,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button7.BackgroundImage = Global.Lab5Template.My.Resources.Resources.CandyCrush
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.Location = New System.Drawing.Point(192, 257)
+        Me.Button7.Location = New System.Drawing.Point(224, 237)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(81, 85)
+        Me.Button7.Size = New System.Drawing.Size(94, 78)
         Me.Button7.TabIndex = 5
         Me.Button7.Text = " "
         Me.Button7.UseVisualStyleBackColor = True
@@ -159,9 +159,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button8.BackgroundImage = Global.Lab5Template.My.Resources.Resources.Clock
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.Location = New System.Drawing.Point(91, 257)
+        Me.Button8.Location = New System.Drawing.Point(106, 237)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(81, 85)
+        Me.Button8.Size = New System.Drawing.Size(94, 78)
         Me.Button8.TabIndex = 4
         Me.Button8.Text = " "
         Me.Button8.UseVisualStyleBackColor = True
@@ -173,9 +173,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.toyBoxButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.ToyBox
         Me.toyBoxButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.toyBoxButton.Location = New System.Drawing.Point(290, 373)
+        Me.toyBoxButton.Location = New System.Drawing.Point(338, 344)
         Me.toyBoxButton.Name = "toyBoxButton"
-        Me.toyBoxButton.Size = New System.Drawing.Size(81, 85)
+        Me.toyBoxButton.Size = New System.Drawing.Size(94, 78)
         Me.toyBoxButton.TabIndex = 10
         Me.toyBoxButton.Text = " "
         Me.toyBoxButton.UseVisualStyleBackColor = True
@@ -187,9 +187,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.youtubeButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.youtube
         Me.youtubeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.youtubeButton.Location = New System.Drawing.Point(192, 373)
+        Me.youtubeButton.Location = New System.Drawing.Point(224, 344)
         Me.youtubeButton.Name = "youtubeButton"
-        Me.youtubeButton.Size = New System.Drawing.Size(81, 85)
+        Me.youtubeButton.Size = New System.Drawing.Size(94, 78)
         Me.youtubeButton.TabIndex = 9
         Me.youtubeButton.Text = " "
         Me.youtubeButton.UseVisualStyleBackColor = True
@@ -201,9 +201,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button12.BackgroundImage = Global.Lab5Template.My.Resources.Resources.Calender
         Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button12.Location = New System.Drawing.Point(91, 373)
+        Me.Button12.Location = New System.Drawing.Point(106, 344)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(81, 85)
+        Me.Button12.Size = New System.Drawing.Size(94, 78)
         Me.Button12.TabIndex = 8
         Me.Button12.Text = " "
         Me.Button12.UseVisualStyleBackColor = True
@@ -215,9 +215,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button13.BackgroundImage = Global.Lab5Template.My.Resources.Resources.music
         Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button13.Location = New System.Drawing.Point(326, 648)
+        Me.Button13.Location = New System.Drawing.Point(380, 598)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(81, 85)
+        Me.Button13.Size = New System.Drawing.Size(94, 78)
         Me.Button13.TabIndex = 15
         Me.Button13.Text = " "
         Me.Button13.UseVisualStyleBackColor = True
@@ -229,9 +229,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button14.BackgroundImage = Global.Lab5Template.My.Resources.Resources.video
         Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button14.Location = New System.Drawing.Point(245, 648)
+        Me.Button14.Location = New System.Drawing.Point(286, 598)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(81, 85)
+        Me.Button14.Size = New System.Drawing.Size(94, 78)
         Me.Button14.TabIndex = 14
         Me.Button14.Text = " "
         Me.Button14.UseVisualStyleBackColor = True
@@ -243,9 +243,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SfariButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.safari
         Me.SfariButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SfariButton.Location = New System.Drawing.Point(165, 648)
+        Me.SfariButton.Location = New System.Drawing.Point(192, 598)
         Me.SfariButton.Name = "SfariButton"
-        Me.SfariButton.Size = New System.Drawing.Size(81, 85)
+        Me.SfariButton.Size = New System.Drawing.Size(94, 78)
         Me.SfariButton.TabIndex = 13
         Me.SfariButton.Text = " "
         Me.SfariButton.UseVisualStyleBackColor = True
@@ -257,9 +257,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button16.BackgroundImage = Global.Lab5Template.My.Resources.Resources.Settings
         Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button16.Location = New System.Drawing.Point(84, 648)
+        Me.Button16.Location = New System.Drawing.Point(98, 598)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(81, 85)
+        Me.Button16.Size = New System.Drawing.Size(94, 78)
         Me.Button16.TabIndex = 12
         Me.Button16.Text = " "
         Me.Button16.UseVisualStyleBackColor = True
@@ -271,9 +271,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button17.BackgroundImage = Global.Lab5Template.My.Resources.Resources.notes
         Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button17.Location = New System.Drawing.Point(406, 648)
+        Me.Button17.Location = New System.Drawing.Point(474, 598)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(81, 85)
+        Me.Button17.Size = New System.Drawing.Size(94, 78)
         Me.Button17.TabIndex = 16
         Me.Button17.Text = " "
         Me.Button17.UseVisualStyleBackColor = True
@@ -283,10 +283,10 @@ Partial Class Main
         Me.myBrowser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.myBrowser.Location = New System.Drawing.Point(75, 121)
-        Me.myBrowser.MinimumSize = New System.Drawing.Size(17, 22)
+        Me.myBrowser.Location = New System.Drawing.Point(87, 112)
+        Me.myBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.myBrowser.Name = "myBrowser"
-        Me.myBrowser.Size = New System.Drawing.Size(422, 621)
+        Me.myBrowser.Size = New System.Drawing.Size(492, 573)
         Me.myBrowser.TabIndex = 17
         Me.myBrowser.Url = New System.Uri("https://www.youtube.com", System.UriKind.Absolute)
         Me.myBrowser.Visible = False
@@ -297,9 +297,9 @@ Partial Class Main
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.homeButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.homeButton.Location = New System.Drawing.Point(273, 771)
+        Me.homeButton.Location = New System.Drawing.Point(318, 712)
         Me.homeButton.Name = "homeButton"
-        Me.homeButton.Size = New System.Drawing.Size(27, 23)
+        Me.homeButton.Size = New System.Drawing.Size(31, 21)
         Me.homeButton.TabIndex = 18
         Me.homeButton.Text = " "
         Me.homeButton.UseVisualStyleBackColor = False
@@ -321,19 +321,27 @@ Partial Class Main
         Me.toyPanel.Controls.Add(Me.soundLetterGame)
         Me.toyPanel.Controls.Add(Me.parrotButton)
         Me.toyPanel.Controls.Add(Me.alphabetGameButton)
-        Me.toyPanel.Location = New System.Drawing.Point(74, 120)
+        Me.toyPanel.Location = New System.Drawing.Point(86, 111)
         Me.toyPanel.Name = "toyPanel"
-        Me.toyPanel.Size = New System.Drawing.Size(422, 622)
+        Me.toyPanel.Size = New System.Drawing.Size(492, 574)
         Me.toyPanel.TabIndex = 19
         Me.toyPanel.Visible = False
+        '
+        'genericPanel
+        '
+        Me.genericPanel.Location = New System.Drawing.Point(3, 435)
+        Me.genericPanel.Name = "genericPanel"
+        Me.genericPanel.Size = New System.Drawing.Size(302, 140)
+        Me.genericPanel.TabIndex = 9
+        Me.genericPanel.Visible = False
         '
         'startButton
         '
         Me.startButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.toygame
         Me.startButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.startButton.Location = New System.Drawing.Point(-15, 506)
+        Me.startButton.Location = New System.Drawing.Point(-17, 467)
         Me.startButton.Name = "startButton"
-        Me.startButton.Size = New System.Drawing.Size(112, 128)
+        Me.startButton.Size = New System.Drawing.Size(131, 118)
         Me.startButton.TabIndex = 0
         Me.startButton.Text = " "
         Me.startButton.UseVisualStyleBackColor = True
@@ -342,9 +350,9 @@ Partial Class Main
         '
         Me.drawingLetterGame.BackgroundImage = Global.Lab5Template.My.Resources.Resources.chlkboard
         Me.drawingLetterGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.drawingLetterGame.Location = New System.Drawing.Point(97, 263)
+        Me.drawingLetterGame.Location = New System.Drawing.Point(113, 243)
         Me.drawingLetterGame.Name = "drawingLetterGame"
-        Me.drawingLetterGame.Size = New System.Drawing.Size(107, 89)
+        Me.drawingLetterGame.Size = New System.Drawing.Size(125, 82)
         Me.drawingLetterGame.TabIndex = 8
         Me.drawingLetterGame.Text = " "
         Me.drawingLetterGame.UseVisualStyleBackColor = True
@@ -353,9 +361,9 @@ Partial Class Main
         '
         Me.typingGame.BackgroundImage = Global.Lab5Template.My.Resources.Resources.typing
         Me.typingGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.typingGame.Location = New System.Drawing.Point(97, 362)
+        Me.typingGame.Location = New System.Drawing.Point(113, 334)
         Me.typingGame.Name = "typingGame"
-        Me.typingGame.Size = New System.Drawing.Size(107, 103)
+        Me.typingGame.Size = New System.Drawing.Size(275, 95)
         Me.typingGame.TabIndex = 7
         Me.typingGame.Text = " "
         Me.typingGame.UseVisualStyleBackColor = True
@@ -364,9 +372,9 @@ Partial Class Main
         '
         Me.settingsButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.settings1
         Me.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.settingsButton.Location = New System.Drawing.Point(17, 20)
+        Me.settingsButton.Location = New System.Drawing.Point(20, 18)
         Me.settingsButton.Name = "settingsButton"
-        Me.settingsButton.Size = New System.Drawing.Size(75, 75)
+        Me.settingsButton.Size = New System.Drawing.Size(87, 69)
         Me.settingsButton.TabIndex = 6
         Me.settingsButton.Text = " "
         Me.settingsButton.UseVisualStyleBackColor = True
@@ -375,9 +383,9 @@ Partial Class Main
         '
         Me.childViewPorgressButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.toyview
         Me.childViewPorgressButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.childViewPorgressButton.Location = New System.Drawing.Point(215, 362)
+        Me.childViewPorgressButton.Location = New System.Drawing.Point(261, 18)
         Me.childViewPorgressButton.Name = "childViewPorgressButton"
-        Me.childViewPorgressButton.Size = New System.Drawing.Size(118, 101)
+        Me.childViewPorgressButton.Size = New System.Drawing.Size(103, 69)
         Me.childViewPorgressButton.TabIndex = 5
         Me.childViewPorgressButton.Text = " "
         Me.childViewPorgressButton.UseVisualStyleBackColor = True
@@ -386,9 +394,9 @@ Partial Class Main
         '
         Me.storyBookGame.BackgroundImage = Global.Lab5Template.My.Resources.Resources.toybook
         Me.storyBookGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.storyBookGame.Location = New System.Drawing.Point(216, 182)
+        Me.storyBookGame.Location = New System.Drawing.Point(252, 168)
         Me.storyBookGame.Name = "storyBookGame"
-        Me.storyBookGame.Size = New System.Drawing.Size(117, 75)
+        Me.storyBookGame.Size = New System.Drawing.Size(136, 69)
         Me.storyBookGame.TabIndex = 4
         Me.storyBookGame.Text = " "
         Me.storyBookGame.UseVisualStyleBackColor = True
@@ -397,9 +405,9 @@ Partial Class Main
         '
         Me.soundLetterGame.BackgroundImage = Global.Lab5Template.My.Resources.Resources.microphone
         Me.soundLetterGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.soundLetterGame.Location = New System.Drawing.Point(216, 263)
+        Me.soundLetterGame.Location = New System.Drawing.Point(252, 243)
         Me.soundLetterGame.Name = "soundLetterGame"
-        Me.soundLetterGame.Size = New System.Drawing.Size(117, 92)
+        Me.soundLetterGame.Size = New System.Drawing.Size(136, 85)
         Me.soundLetterGame.TabIndex = 3
         Me.soundLetterGame.Text = " "
         Me.soundLetterGame.UseVisualStyleBackColor = True
@@ -408,9 +416,9 @@ Partial Class Main
         '
         Me.parrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
         Me.parrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.parrotButton.Location = New System.Drawing.Point(317, 20)
+        Me.parrotButton.Location = New System.Drawing.Point(370, 18)
         Me.parrotButton.Name = "parrotButton"
-        Me.parrotButton.Size = New System.Drawing.Size(75, 75)
+        Me.parrotButton.Size = New System.Drawing.Size(87, 69)
         Me.parrotButton.TabIndex = 2
         Me.parrotButton.Text = " "
         Me.parrotButton.UseVisualStyleBackColor = True
@@ -419,28 +427,20 @@ Partial Class Main
         '
         Me.alphabetGameButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.alphabetletters
         Me.alphabetGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.alphabetGameButton.Location = New System.Drawing.Point(97, 182)
+        Me.alphabetGameButton.Location = New System.Drawing.Point(113, 168)
         Me.alphabetGameButton.Name = "alphabetGameButton"
-        Me.alphabetGameButton.Size = New System.Drawing.Size(107, 75)
+        Me.alphabetGameButton.Size = New System.Drawing.Size(125, 69)
         Me.alphabetGameButton.TabIndex = 1
         Me.alphabetGameButton.Text = " "
         Me.alphabetGameButton.UseVisualStyleBackColor = True
         '
-        'genericPanel
-        '
-        Me.genericPanel.Location = New System.Drawing.Point(3, 1)
-        Me.genericPanel.Name = "genericPanel"
-        Me.genericPanel.Size = New System.Drawing.Size(422, 622)
-        Me.genericPanel.TabIndex = 9
-        Me.genericPanel.Visible = False
-        '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Lab5Template.My.Resources.Resources.ipadPro1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(597, 850)
+        Me.ClientSize = New System.Drawing.Size(696, 785)
         Me.Controls.Add(Me.toyPanel)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button13)
