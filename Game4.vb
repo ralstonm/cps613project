@@ -72,4 +72,13 @@
         End If
         AddHandler resultsScreen.Button1.Click, AddressOf Me.backButton_Click
     End Sub
+
+    Private Sub AlphaBetParrotButton_Click(sender As Object, e As EventArgs) Handles AlphaBetParrotButton.Click
+        If (counter = 0) Then SAPI.Speak("Can you say the sound that, A, makes?")
+        If (counter = 1) Then SAPI.Speak("Can you say the sound that, B, makes?")
+        If (counter = 2) Then SAPI.Speak("Can you say the sound that, C, makes?")
+        If (counter = 3) Then SAPI.Speak("Can you say the sound that, E, makes?")
+        If (counter = 4) Then SAPI.Speak("Can you say the sound that, D, makes?")
+        If (counter = 5) Then SAPI.Speak("Can you say the sound that, F, makes?")
+    End Sub
 End Class

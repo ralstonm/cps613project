@@ -63,6 +63,8 @@ Public Class Game2
 
     Private Sub InitializeGame()
         If end2 = 3 Then
+            Threading.Thread.Sleep(500)
+            My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
             parentFormRef.closeGame2()
         End If
         Randomize()
@@ -186,4 +188,7 @@ Public Class Game2
 
 
     
+    Private Sub AlphaBetParrotButton_Click(sender As Object, e As EventArgs) Handles AlphaBetParrotButton.Click
+        SAPI.Speak("Press the letter that you see on your keyboard")
+    End Sub
 End Class
