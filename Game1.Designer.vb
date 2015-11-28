@@ -76,7 +76,7 @@ Partial Class Game1
         '
         Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
         Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(3, 3)
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(339, 3)
         Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
         Me.AlphaBetParrotButton.Size = New System.Drawing.Size(80, 78)
         Me.AlphaBetParrotButton.TabIndex = 3

@@ -34,9 +34,9 @@ Partial Class Game3
         '
         Me.AlphaBetParrotButton.BackgroundImage = Global.Lab5Template.My.Resources.Resources.parrot
         Me.AlphaBetParrotButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(138, 12)
+        Me.AlphaBetParrotButton.Location = New System.Drawing.Point(339, 3)
         Me.AlphaBetParrotButton.Name = "AlphaBetParrotButton"
-        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(93, 72)
+        Me.AlphaBetParrotButton.Size = New System.Drawing.Size(80, 78)
         Me.AlphaBetParrotButton.TabIndex = 4
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
@@ -46,9 +46,9 @@ Partial Class Game3
         Me.drawingBox.BackColor = System.Drawing.Color.Transparent
         Me.drawingBox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.TracE
         Me.drawingBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.drawingBox.Location = New System.Drawing.Point(12, 142)
+        Me.drawingBox.Location = New System.Drawing.Point(10, 154)
         Me.drawingBox.Name = "drawingBox"
-        Me.drawingBox.Size = New System.Drawing.Size(430, 412)
+        Me.drawingBox.Size = New System.Drawing.Size(369, 446)
         Me.drawingBox.TabIndex = 5
         Me.drawingBox.TabStop = False
         '
@@ -56,24 +56,24 @@ Partial Class Game3
         '
         Me.backbox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.traceA
         Me.backbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.backbox.Location = New System.Drawing.Point(12, 142)
+        Me.backbox.Location = New System.Drawing.Point(10, 154)
         Me.backbox.Name = "backbox"
-        Me.backbox.Size = New System.Drawing.Size(448, 412)
+        Me.backbox.Size = New System.Drawing.Size(384, 446)
         Me.backbox.TabIndex = 6
         Me.backbox.TabStop = False
         '
         'Nextbutton
         '
-        Me.Nextbutton.Location = New System.Drawing.Point(177, 90)
+        Me.Nextbutton.Location = New System.Drawing.Point(152, 98)
         Me.Nextbutton.Name = "Nextbutton"
-        Me.Nextbutton.Size = New System.Drawing.Size(90, 41)
+        Me.Nextbutton.Size = New System.Drawing.Size(77, 44)
         Me.Nextbutton.TabIndex = 7
         Me.Nextbutton.Text = "Next"
         Me.Nextbutton.UseVisualStyleBackColor = True
         '
         'Game3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Controls.Add(Me.Nextbutton)
@@ -81,7 +81,7 @@ Partial Class Game3
         Me.Controls.Add(Me.AlphaBetParrotButton)
         Me.Controls.Add(Me.backbox)
         Me.Name = "Game3"
-        Me.Size = New System.Drawing.Size(492, 574)
+        Me.Size = New System.Drawing.Size(422, 622)
         CType(Me.drawingBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.backbox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

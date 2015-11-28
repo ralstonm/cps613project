@@ -22,7 +22,7 @@
         backButton = New SharedBackButton()
         Me.Controls.Add(backButton)
         backButton.BringToFront()
-        backButton.Location = New Point(parentFormRef.xOffsetB - 60, parentFormRef.yOffsetB + 10)
+        backButton.Location = New Point(parentFormRef.xOffsetB, parentFormRef.yOffsetB + 10)
 
         'Add a clickhandler to the actual button on the backbutton
         AddHandler backButton.Button1.Click, AddressOf Me.backButton_Click

@@ -28,7 +28,7 @@
     Public yOffset = 121
 
     'Offset to place back button in the same place
-    Public xOffsetB = 324
+    Public xOffsetB = 4
     Public yOffsetB = 4
 
 
@@ -224,7 +224,7 @@
         closeSettings()
         closeStickers()
 
-        soundVolume = 0
+        soundVolume = 10
 
         myBrowser.Visible = False
         myBrowser.SendToBack()
@@ -236,7 +236,7 @@
         genericPanel.SendToBack()
     End Sub
 
-    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles SafariButton.Click
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles SfariButton.Click
         myBrowser.Visible = True
         temp = New Uri("https://www.google.com")
         myBrowser.Url = temp

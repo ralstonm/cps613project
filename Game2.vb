@@ -34,7 +34,7 @@ Public Class Game2
         backButton = New SharedBackButton()
         Me.Controls.Add(backButton)
         backButton.BringToFront()
-        backButton.Location = New Point(parentFormRef.xOffsetB + 45, parentFormRef.yOffsetB)
+        backButton.Location = New Point(parentFormRef.xOffsetB, parentFormRef.yOffsetB)
 
 
 
