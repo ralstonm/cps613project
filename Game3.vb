@@ -31,7 +31,7 @@
         gbitmap2 = New Bitmap(drawingBox.Width, drawingBox.Height)
 
         SAPI = CreateObject("SAPI.spvoice")
-        SAPI.Speak("Hello! Can you write the letter E?")
+        SAPI.Speak("Hello! Can you write the letter E? Press the next button after your done")
     End Sub
 
     Private Sub backButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -52,20 +52,15 @@
     Private Sub AlphaBetParrotButton_Click(sender As Object, e As EventArgs) Handles AlphaBetParrotButton.Click
 
         If status = 0 Then
-            SAPI.Speak(" Can you write the letter E?")
+            SAPI.Speak(" Can you write the letter E? Press the next button after your done")
         Else
-            SAPI.Speak(" Can you write the letter A?")
+            SAPI.Speak(" Can you write the letter A? Press the next button after your done")
         End If
     End Sub
 
     Private Sub drawingBox_MouseMove(sender As Object, e As MouseEventArgs) Handles drawingBox.MouseMove
         If ismousedown = True Then
-            Dim g As Graphics = Graphics.FromImage(gbitmap)
-            g.DrawLine(New Pen(Me.drawingBox.BackColor), startX, startY, endX, endY)
-            drawingBox.Image = gbitmap
-            g.DrawLine(Pens.Blue, startX, startY, e.X, e.Y)
-            endX = e.X
-            endY = e.Y
+            
         End If
     End Sub
 
@@ -73,10 +68,17 @@
         ismousedown = True
         startX = e.X
         startY = e.Y
+       
     End Sub
 
     Private Sub drawingBox_MouseUp(sender As Object, e As MouseEventArgs) Handles drawingBox.MouseUp
         ismousedown = False
+        Dim g As Graphics = Graphics.FromImage(gbitmap)
+        g.DrawLine(New Pen(Me.drawingBox.BackColor), startX, startY, endX, endY)
+        drawingBox.Image = gbitmap
+        g.DrawLine(Pens.Blue, startX, startY, e.X, e.Y)
+        endX = e.X
+        endY = e.Y
     End Sub
 
     Private Sub Nextbutton_Click(sender As Object, e As EventArgs) Handles Nextbutton.Click
@@ -85,9 +87,10 @@
         backbox.BringToFront()
         status = status + 1
         If status = 2 Then
+            My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
             parentFormRef.closeGame3()
         Else
-            SAPI.Speak(" Can you write the letter A?")
+            SAPI.Speak(" Can you write the letter A? Press the next button after your done")
         End If
 
         
@@ -103,16 +106,17 @@
     Private Sub backbox_MouseMove(sender As Object, e As MouseEventArgs) Handles backbox.MouseMove
         If ismousedown = True Then
 
-            Dim g As Graphics = Graphics.FromImage(gbitmap2)
-            g.DrawLine(New Pen(Me.backbox.BackColor), startX, startY, endX, endY)
-            backbox.Image = gbitmap2
-            g.DrawLine(Pens.Blue, startX, startY, e.X, e.Y)
-            endX = e.X
-            endY = e.Y
+           
         End If
     End Sub
 
     Private Sub backbox_MouseUp(sender As Object, e As MouseEventArgs) Handles backbox.MouseUp
         ismousedown = False
+        Dim g As Graphics = Graphics.FromImage(gbitmap2)
+        g.DrawLine(New Pen(Me.backbox.BackColor), startX, startY, endX, endY)
+        backbox.Image = gbitmap2
+        g.DrawLine(Pens.Blue, startX, startY, e.X, e.Y)
+        endX = e.X
+        endY = e.Y
     End Sub
 End Class
