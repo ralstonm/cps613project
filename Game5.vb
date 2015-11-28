@@ -87,7 +87,7 @@
                 CabLabel.Text = "_ s _"
                 Return
             End If
-            If CabLabel.Text = "C _ _" Then
+            If CabLabel.Text = "c _ _" Then
                 CabLabel.Text = "c a _"
                 Return
             End If
