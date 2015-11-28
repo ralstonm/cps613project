@@ -66,4 +66,9 @@
         PageCorner.Image = newImage
     End Sub
    
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Dim SAPI
+        SAPI = CreateObject("SAPI.spvoice")
+        SAPI.Speak("Here is your progress.  You are doing well! Ask your parent to increase the difficulty if the games are too easy")
+    End Sub
 End Class
