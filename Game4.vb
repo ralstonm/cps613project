@@ -38,7 +38,7 @@
 
     Private Sub MicrophoneButton_Click(sender As Object, e As EventArgs) Handles MicrophoneButton.Click
         'I have no idea why this doesn't work
-        RecordingPictureBox.Visible = True
+
         System.Threading.Thread.Sleep(1000)
         SAPI.Speak("Good job!")
         'It should show a red circle when the microphone is "listening" but it doesn't
@@ -80,5 +80,14 @@
         If (counter = 3) Then SAPI.Speak("Can you say the sound that, E, makes?")
         If (counter = 4) Then SAPI.Speak("Can you say the sound that, D, makes?")
         If (counter = 5) Then SAPI.Speak("Can you say the sound that, F, makes?")
+    End Sub
+
+    Private Sub MicrophoneButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MicrophoneButton.MouseDown
+        RecordingPictureBox.Visible = True
+    End Sub
+
+    Private Sub MicrophoneButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MicrophoneButton.MouseUp
+        RecordingPictureBox.Visible = False
+
     End Sub
 End Class
