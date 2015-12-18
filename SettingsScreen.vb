@@ -64,12 +64,12 @@
 
     Public Sub handleAdvanced()
 
-        easyLabel.Hide()
-        mediumLabel.Hide()
-        hardLabel.Hide()
-        difficultySlider.Hide()
-        customLabel.Show()
-        customClear.Show()
+        'easyLabel.Hide()
+        ' mediumLabel.Hide()
+        ' hardLabel.Hide()
+        '  difficultySlider.Hide()
+        ''    customLabel.Show()
+        '    customClear.Show()
 
     End Sub
 
@@ -167,12 +167,12 @@
     End Sub
 
     Private Sub customClear_Click(sender As Object, e As EventArgs) Handles customClear.Click
-        easyLabel.Show()
-        mediumLabel.Show()
-        hardLabel.Show()
-        difficultySlider.Show()
-        customLabel.Hide()
-        customClear.Hide()
+        ' easyLabel.Show()
+        '     mediumLabel.Show()
+        '     hardLabel.Show()
+        '     difficultySlider.Show()
+        '     customLabel.Hide()
+        '     customClear.Hide()
     End Sub
 
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)

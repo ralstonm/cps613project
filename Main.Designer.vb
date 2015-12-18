@@ -321,9 +321,9 @@ Partial Class Main
         Me.toyPanel.Controls.Add(Me.soundLetterGame)
         Me.toyPanel.Controls.Add(Me.parrotButton)
         Me.toyPanel.Controls.Add(Me.alphabetGameButton)
-        Me.toyPanel.Location = New System.Drawing.Point(86, 111)
+        Me.toyPanel.Location = New System.Drawing.Point(86, 112)
         Me.toyPanel.Name = "toyPanel"
-        Me.toyPanel.Size = New System.Drawing.Size(492, 574)
+        Me.toyPanel.Size = New System.Drawing.Size(492, 573)
         Me.toyPanel.TabIndex = 19
         Me.toyPanel.Visible = False
         '
