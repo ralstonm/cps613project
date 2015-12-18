@@ -32,6 +32,7 @@ Partial Class Game4
         Me.RecordingPictureBox = New System.Windows.Forms.PictureBox()
         Me.MicrophoneButton = New System.Windows.Forms.Button()
         Me.AlphaBetParrotButton = New System.Windows.Forms.Button()
+        Me.MicStat = New System.Windows.Forms.Label()
         Me.MagnetBoard.SuspendLayout()
         CType(Me.PictureBoxF, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxE, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,6 +105,7 @@ Partial Class Game4
         Me.PictureBoxC.Size = New System.Drawing.Size(108, 97)
         Me.PictureBoxC.TabIndex = 2
         Me.PictureBoxC.TabStop = False
+        Me.PictureBoxC.Visible = False
         '
         'PictureBoxB
         '
@@ -115,6 +117,7 @@ Partial Class Game4
         Me.PictureBoxB.Size = New System.Drawing.Size(131, 142)
         Me.PictureBoxB.TabIndex = 1
         Me.PictureBoxB.TabStop = False
+        Me.PictureBoxB.Visible = False
         '
         'PictureBoxA
         '
@@ -131,7 +134,7 @@ Partial Class Game4
         '
         Me.RecordingPictureBox.BackgroundImage = Global.Lab5Template.My.Resources.Resources.recording1
         Me.RecordingPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.RecordingPictureBox.Location = New System.Drawing.Point(386, 343)
+        Me.RecordingPictureBox.Location = New System.Drawing.Point(358, 343)
         Me.RecordingPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.RecordingPictureBox.Name = "RecordingPictureBox"
         Me.RecordingPictureBox.Size = New System.Drawing.Size(78, 60)
@@ -146,7 +149,7 @@ Partial Class Game4
         Me.MicrophoneButton.Location = New System.Drawing.Point(12, 343)
         Me.MicrophoneButton.Margin = New System.Windows.Forms.Padding(2)
         Me.MicrophoneButton.Name = "MicrophoneButton"
-        Me.MicrophoneButton.Size = New System.Drawing.Size(350, 223)
+        Me.MicrophoneButton.Size = New System.Drawing.Size(312, 223)
         Me.MicrophoneButton.TabIndex = 11
         Me.MicrophoneButton.UseVisualStyleBackColor = True
         '
@@ -161,11 +164,22 @@ Partial Class Game4
         Me.AlphaBetParrotButton.Text = " "
         Me.AlphaBetParrotButton.UseVisualStyleBackColor = True
         '
+        'MicStat
+        '
+        Me.MicStat.AutoSize = True
+        Me.MicStat.Font = New System.Drawing.Font("Elephant", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MicStat.Location = New System.Drawing.Point(329, 414)
+        Me.MicStat.Name = "MicStat"
+        Me.MicStat.Size = New System.Drawing.Size(138, 41)
+        Me.MicStat.TabIndex = 13
+        Me.MicStat.Text = "Mic off"
+        '
         'Game4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.MicStat)
         Me.Controls.Add(Me.RecordingPictureBox)
         Me.Controls.Add(Me.MicrophoneButton)
         Me.Controls.Add(Me.MagnetBoard)
@@ -181,6 +195,7 @@ Partial Class Game4
         CType(Me.PictureBoxA, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RecordingPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents MicrophoneButton As System.Windows.Forms.Button
@@ -193,5 +208,6 @@ Partial Class Game4
     Friend WithEvents PictureBoxE As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBoxD As System.Windows.Forms.PictureBox
     Friend WithEvents RecordingPictureBox As System.Windows.Forms.PictureBox
+    Friend WithEvents MicStat As System.Windows.Forms.Label
 
 End Class

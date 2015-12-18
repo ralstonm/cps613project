@@ -329,9 +329,9 @@ Partial Class Main
         '
         'genericPanel
         '
-        Me.genericPanel.Location = New System.Drawing.Point(3, 0)
+        Me.genericPanel.Location = New System.Drawing.Point(0, 0)
         Me.genericPanel.Name = "genericPanel"
-        Me.genericPanel.Size = New System.Drawing.Size(489, 577)
+        Me.genericPanel.Size = New System.Drawing.Size(492, 577)
         Me.genericPanel.TabIndex = 9
         Me.genericPanel.Visible = False
         '

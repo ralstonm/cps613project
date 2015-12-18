@@ -44,20 +44,41 @@
         'It should show a red circle when the microphone is "listening" but it doesn't
         RecordingPictureBox.Visible = False
         counter = counter + 1
-        If (counter = 1) Then SAPI.Speak("Can you say the sound that, B, makes?")
-        If (counter = 2) Then SAPI.Speak("Can you say the sound that, C, makes?")
+        If (counter = 1) Then
+
+            SAPI.Speak("Can you say the sound that, B, makes?")
+            PictureBoxB.Visible = True
+            PictureBoxA.Visible = False
+        End If
+
+        If (counter = 2) Then
+            SAPI.Speak("Can you say the sound that, C, makes?")
+            PictureBoxB.Visible = False
+            PictureBoxC.Visible = True
+        End If
+
         If (counter = 3) Then
             Me.PictureBoxA.Visible = False
             Me.PictureBoxB.Visible = False
             Me.PictureBoxC.Visible = False
 
-            Me.PictureBoxD.Visible = True
+            Me.PictureBoxD.Visible = False
             Me.PictureBoxE.Visible = True
-            Me.PictureBoxF.Visible = True
+            Me.PictureBoxF.Visible = False
             SAPI.Speak("Can you say the sound that, E, makes?")
         End If
-        If (counter = 4) Then SAPI.Speak("Can you say the sound that, D, makes?")
-        If (counter = 5) Then SAPI.Speak("Can you say the sound that, F, makes?")
+        If (counter = 4) Then
+            SAPI.Speak("Can you say the sound that, D, makes?")
+            Me.PictureBoxE.Visible = False
+            Me.PictureBoxD.Visible = True
+        End If
+
+        If (counter = 5) Then
+            SAPI.Speak("Can you say the sound that, F, makes?")
+            Me.PictureBoxD.Visible = False
+            Me.PictureBoxF.Visible = True
+        End If
+
         If (counter = 6) Then
             My.Computer.Audio.Play(My.Resources.applus, AudioPlayMode.Background)
             parentFormRef.closeGame4()
@@ -84,10 +105,11 @@
 
     Private Sub MicrophoneButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MicrophoneButton.MouseDown
         RecordingPictureBox.Visible = True
+        MicStat.Text = "Mic ON"
     End Sub
 
     Private Sub MicrophoneButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MicrophoneButton.MouseUp
         RecordingPictureBox.Visible = False
-
+        MicStat.Text = "Mic off"
     End Sub
 End Class

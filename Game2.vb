@@ -189,6 +189,80 @@ Public Class Game2
 
     
     Private Sub AlphaBetParrotButton_Click(sender As Object, e As EventArgs) Handles AlphaBetParrotButton.Click
-        SAPI.Speak("Press the letter that you see on your keyboard")
+        If (counter = 1) Then
+
+            SAPI.Speak("Can you find the letter A on the keyboard?")
+
+        End If
+        If (counter = 2) Then
+
+            SAPI.Speak("Can you find the letter C on the keyboard?")
+
+        End If
+        If (counter = 3) Then
+
+            SAPI.Speak("Can you find the letter E on the keyboard?")
+
+        End If
+        If (counter = 4) Then
+
+            SAPI.Speak("Can you find the letter F on the keyboard?")
+
+        End If
+        If (counter = 5) Then
+
+            SAPI.Speak("Can you find the letter H on the keyboard?")
+
+        End If
+        If (counter = 6) Then
+
+            SAPI.Speak("Can you find the letter I on the keyboard?")
+
+        End If
+        If (counter = 7) Then
+
+            SAPI.Speak("Can you find the letter J on the keyboard?")
+
+        End If
+        If (counter = 8) Then
+
+            SAPI.Speak("Can you find the letter k on the keyboard?")
+
+        End If
+        If (counter = 9) Then
+
+            SAPI.Speak("Can you find the letter L on the keyboard?")
+
+        End If
+        If (counter = 10) Then
+
+            SAPI.Speak("Can you find the letter M on the keyboard?")
+
+        End If
+        If (counter = 11) Then
+
+            SAPI.Speak("Can you find the letter N on the keyboard?")
+
+        End If
+        If (counter = 12) Then
+
+            SAPI.Speak("Can you find the letter O on the keyboard?")
+
+        End If
+        If (counter = 13) Then
+
+            SAPI.Speak("Can you find the letter P on the keyboard?")
+
+        End If
+        If (counter = 14) Then
+
+            SAPI.Speak("Can you find the letter Q on the keyboard?")
+
+        End If
+        If (counter = 15) Then
+
+            SAPI.Speak("Can you find the letter R on the keyboard?")
+
+        End If
     End Sub
 End Class

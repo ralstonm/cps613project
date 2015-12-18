@@ -6,6 +6,8 @@
     Const INFINITE = -1&
     Dim parrotHelpText
 
+    Dim tmepd
+
     Private Sub Game5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Manually add the back button
         backButton = New SharedBackButton()
@@ -52,6 +54,8 @@
         speak("Try again")
     End Sub
     Private Sub AppleCorrect()
+
+       
         parrotHelpText = "Can you spell Bee?"
         CorrectAnswer()
         ApplePage.Visible = False
@@ -74,13 +78,37 @@
         parentFormRef.closeGame5()
     End Sub
 
+    Sub Pause(ByVal milliseconds As Long)
+        If milliseconds <= 0 Then Return
+        Dim sw As New Stopwatch()
+        sw.Start()
+        Dim i As Long = 0
+        Do
+            If i Mod 50000 = 0 Then ' Check the timer every 50,000th iteration
+                sw.Stop()
+                If sw.ElapsedMilliseconds >= milliseconds Then
+                    Exit Do
+                Else
+                    sw.Start()
+                End If
+            End If
+            i += 1
+        Loop
+    End Sub
+
     Private Sub AButton_Click(sender As Object, e As EventArgs) Handles AButton.Click
         If ApplePage.Visible = False And CabPage.Visible = False Then
             IncorrectAnswer()
         End If
         If ApplePage.Visible = True Then
+
+
+
             AppleLabel.Text = "apple"
+
             AppleCorrect()
+
+
         End If
         If CabPage.Visible = True Then
             If CabLabel.Text = "_ _ _" Then
